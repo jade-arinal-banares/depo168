@@ -1,0 +1,614 @@
+<!doctype html>
+<html ⚡>
+<head>
+  <meta charset="utf-8">
+  <link rel="canonical" href="index.html">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link href="./images/depo-logo.svg" rel="shortcut icon" type="image/x-icon" />
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js" async></script>
+  <title>DEPO168</title>
+
+  <style amp-custom>
+   /*Custom Css*/
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(22, 22, 22);
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        color: #fff;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong{
+        font-weight: bold;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    h3{
+        font-size: 22px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    h5{
+        font-size: 15px;
+    }
+    h6{
+        font-size: 12px;
+    }
+    p{
+        text-align: justify;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    a{
+        color: #f8da02;
+    }
+    ul,
+    ol{
+        text-align: left;
+        padding-left: 1em;
+    }
+    .alignleft{
+        float: left;
+        margin-right: 15px;
+    }
+    .alignright{
+        float: right;
+        margin-left: 15px;
+    }
+    .aligncenter{
+        margin: 0 auto 15px;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .svg-icon{
+        display: inline-block;
+        fill: currentColor;
+        height: 1em;
+        position: relative;
+        top: -.0625em;
+        vertical-align: middle;
+        width: 1em;
+    }
+    .btn{
+        display: inline-block;
+        background: linear-gradient(to bottom,#fff 0,#8b92bc 100%);
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+    .btn:hover,
+    .featured .btn:hover {
+        box-shadow: 0 0 5px 3px #fff;
+    }
+    .btn-style-1{
+        background: linear-gradient(to bottom,#fee801 0,#ffba1e 100%);
+    }
+    .btn-style-green{
+        background-color: rgb(2, 126, 203);
+        background-repeat: repeat-x;
+        border-color: #3e8f3e;
+    }
+
+    .btn-style-red{
+        background-color: rgb(255, 0, 0);
+        background-repeat: repeat-x;
+        padding: 0 15px;
+    }
+
+    #header .container{
+        display: flex;
+    }
+    #header nav a{
+        color: #fff;
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 11px;
+
+        overflow: hidden;
+        /* padding-right: 20px; */
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 13px 5px;
+    }
+
+    #site-logo{
+        width: 40%;
+    }
+    #site-nav{
+        width: 60%;
+        text-align: right;
+    }
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+    .col-4,
+    .col-6{
+        padding: 0 10px;
+    }
+    .col-6{
+        width: 50%;
+    }
+    .col-4{
+        width: 33.333%;
+    }
+    .container{
+        max-width: 960px;
+        margin: auto;
+        padding: 0 15px;
+    }
+    .site-title{
+        background: #0e0e0e;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #5a5b5e;
+        border-radius: 5px;
+        margin: 0 0 20px 0;
+        letter-spacing: 1px;
+    }
+    .featured.box {
+        text-shadow: 0px 1px 1px rgb(0 0 0);
+    }
+    .featured .btn{
+        display: block;
+        margin-bottom: 17px;
+        background: radial-gradient(circle 178px at 49.5% 54.2%,#3593ff 0,#001c36 90%);
+        border-bottom: 1px solid #022742;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        /* box-shadow: 0 0 3px 0 #fff; */
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 8px 10px;
+    }
+    .featured .btn img,
+    .featured .btn span{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .featured .btn img{
+        height: 52px;
+    }
+    .featured .btn span{
+        margin-left: 10px;
+    }
+   
+    .center-box{
+        background: rgb(0 0 0 / 40%);
+        overflow: hidden;
+        width: 100%;
+    }
+    .center-box ul li{
+        list-style-type: none;
+    }
+
+    .img-full-width{
+        width: 100%;
+    }
+    .info{
+        background: radial-gradient(circle 175px at 49.5% 54.2%,#3593ff 0,#001c36 90%);
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        box-shadow: 0 0 3px 0 #fff; 
+        padding: 10px;
+    }
+    .info h3{
+        font-weight: normal;
+        margin: 0 0 10px;
+        font-size: 20px;
+        color: #f8da02;
+        text-transform: uppercase;
+    }
+    .info ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-size: 14px;
+    }
+    .info li{
+        border-bottom: 1px solid #fff;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+        padding-bottom: 7px;
+    }
+    .info li span {
+        color: #f8da02;
+    }
+    #main-wrapper{
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        background-color: #0e417c;
+        background: url(./dpv1/m/images/bg.jpg) repeat;
+        border-top: 1px solid #2672c6;
+        padding-bottom: 40px;
+    }
+    #main-wrapper .container{
+        background: rgba(4, 34, 66, 0.52);
+        box-shadow: 0 0 43px 7px #08192c;
+        padding: 15px;
+        padding: 15px;
+    }
+    #main-wrapper article{
+        padding: 20px;
+    }
+    .separator{
+        border-top: 1px dashed #d1b90f;
+        margin-top: 30px;
+    }
+    .content-top{
+        margin-bottom: 20px;
+    }
+
+    #site-footer{
+        background: rgb(22, 22, 22);
+        padding: 35px 15px;
+    }
+    #site-footer p{
+        margin: 0;
+    }
+
+
+
+        .depo-lama{
+            margin: 10px 0;
+        }
+     
+        .top-nav {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        amp-sidebar  {
+            width: 100%;
+        }
+        amp-sidebar {
+            width: 70%;
+        }
+        .sidebar {
+            padding: 10px;
+            margin: 0;
+            color: #FFF;
+            font-size: 12px;
+        }
+       
+        #sidebar1{
+            background: rgb(22, 22, 22);
+
+        }
+        #sidebar2{
+            background: rgb(22, 22, 22);
+        }
+        /* .sidebar li:first-child{
+            background-color: rgb(236, 203, 91);
+            width: 100%;
+        } */
+
+        .hamburger{
+            color: rgb(236, 203, 91);
+            font-size: 40px;
+        }
+        
+        amp-sidebar .sidebar2{
+            margin: 0 auto;
+        }
+        .sidebar > li {
+            list-style: none;
+            margin-bottom:10px;
+            padding: 10px 0;
+            border-bottom: 1px solid #4b4b4b;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #FFF;
+        }
+        .close-sidebar {
+            font-size: 1.5em;
+            padding: 5px 15px;
+            cursor: pointer;
+            color: #FFFFFF;
+        }
+        .headerbar {
+            color: #FFF;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 40px;
+            z-index: 1000;}
+        .headerbar a {
+            text-decoration: none;
+            color: #FFF;
+        }
+        
+        .headerbar1 {
+            color: #FFF;
+ 
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 40px;
+            z-index: 1000;}
+        .headerbar1 a {
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .sponsor{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .copyright{
+            padding-top: 10px;
+            font-size: 14px;
+            color: rgb(147, 147, 147);
+        }
+        
+@media (max-width: 767px){
+	#header .container{
+		display: block;
+	}
+	#site-logo,
+	#site-nav{
+		width: 100%;
+		text-align: center;
+	}
+
+	#site-nav{
+		display: flex;
+	}
+	#header nav a{
+		width: 50%;
+	}
+	.featured.box{
+		display: block;
+		margin-top: 10px;
+	}
+	.col-4,
+	.col-6{
+		width: 100%;
+	}
+	.featured.box .col-4{
+		margin-bottom: 10px;
+	}
+	#main-wrapper article{
+		padding: 15px;
+	}
+
+}
+
+@media (max-width: 400px){
+	#header nav a{
+		font-size: 16px;
+	}
+}
+   </style>
+</head>
+    <body>
+        <!-- Burger Menu for Mobile-->
+        <div class="container top-nav">
+            <header class="headerbar">
+                <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">&#xf15c;</div>
+             </header>
+             <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+                <amp-img src="./dpv1/m/images/logo@2x.png"
+                width="200"
+                height="70"
+                layout="fixed"
+                alt=""
+                >
+                </amp-img>
+                <p>LOGIN KE AKUN ANDA</p>
+             </amp-sidebar>
+
+             <div id="site-logo">
+                <amp-img src="./dpv1/m/images/logo@2x.png"
+                width="195"
+                height="65"
+                layout="fixed"
+                alt="">
+            </div>
+
+            <header class="headerbar1">
+                <div role="button" on="tap:sidebar2.toggle" tabindex="0" class="hamburger">☰</div>
+             </header>
+             <amp-sidebar id="sidebar2" layout="nodisplay" side="right">
+                <ul class="sidebar">
+                   <li><a href="#">HOME</a></li>
+                   <li><a href="#">DAFTAR</a></li>
+                   <li><a href="#">LOGIN</a></li>
+                   <li><a href="#">AFILIASI</a></li>
+                   <li><a href="#">PRODUK</a></li>
+                   <li><a href="#">HOT & NEW</a></li>
+                   <li><a href="#">SPORTSBOOK</a></li>
+                   <li><a href="#">LIVE CASINO</a></li>
+                   <li><a href="#">SLOTS</a></li>
+                   <li><a href="#">LOTRE</a></li>
+                   <li><a href="#">POKER</a></li>
+                   <li><a href="#">ARCADE</a></li>
+                   <li><a href="#">SABUNG AYAM</a></li>
+                   <li><a href="#">MENU LAINNYA</a></li>
+                   <li><a href="#">PROMOSI</a></li>
+                   <li><a href="#">PUSAT BANTUAN</a></li>
+                   <li><a href="#">TENTANG KAMI</a></li>
+                   <li><a href="#">HUBUNGI KAMI</a></li>
+                   <li><a href="#">PILIHAN BANK</a></li>
+                </ul>
+             </amp-sidebar>
+        </div>
+      
+        
+        <amp-img src="./images/banner/mobile_banner.jpg"
+            width="1385"
+            height="470"
+            layout="responsive"
+            alt="">
+        </amp-img>
+        <!-- Dropdown Section --> 
+        <div class="container">
+            <amp-mega-menu height="50"  layout="fixed-height">
+                <nav>
+                <ul>
+                    <li>
+                    <span role="button">Image</span>
+                        <div role="dialog">
+                            <ol>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                    <span role="button">List</span>
+                        <div role="dialog">
+                            <ol>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                    <a href="#">Link</a>
+                    </li>
+                </ul>
+                </nav>
+            </amp-mega-menu>
+        </div>
+        <header id="header">
+              <nav id="site-nav">
+                <a href="https://www.lovethyneighbor.org/" class="btn-style-green" rel="nofollow" target="_blank">
+                Login
+                </a>
+                <a href="https://www.lovethyneighbor.org/id/register.html" class="btn-style-red" rel="nofollow" target="_blank">
+                 Daftar
+                </a>
+              </nav>
+        </header>
+
+        <div class="container depo-lama">
+            <amp-img src="./dpv1/m/images/depo168-info-v2.jpg"
+              width="640"
+              height="114"
+              layout="responsive"
+              alt="">
+            </amp-img>
+        </div>
+
+        <div class="container">
+            <div class="center-box">
+                <h3>Customer Service</h3>
+                <div class="box-wrap">
+                    <ul class="box-list clearfix">
+                    <li>
+                        <div class="box-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" class="svg-icon">
+                            <path d="M612 251.2c0-117.3-113.8-212.7-253.6-212.7 -139.8 0-253.6 95.4-253.6 212.7s113.8 212.7 253.6 212.7c11.8 0 23.6-0.7 35.2-2 53.9 34.2 93.6 52.9 118.3 55.7 0.9 0.1 1.7 0.1 2.6 0.1 7.9 0 15.2-3.9 19.6-10.6 4.9-7.4 5.2-16.8 0.9-24.5 -0.2-0.4-19.2-35.1-13.7-68.2C579 374 612 314.8 612 251.2zM289.5 283.3c-20.8 0-37.6-16.8-37.6-37.6 0-20.7 16.8-37.6 37.6-37.6 20.7 0 37.6 16.8 37.6 37.6C327.1 266.5 310.3 283.3 289.5 283.3zM427.3 283.3c-20.8 0-37.6-16.8-37.6-37.6 0-20.7 16.8-37.6 37.6-37.6 20.7 0 37.6 16.8 37.6 37.6C464.8 266.5 448 283.3 427.3 283.3z"></path>
+                            <path d="M158.3 421.3c-25.2-20.8-45-45.2-59-72.5 -14.7-28.7-22.2-59.3-22.2-90.9 0-31.6 7.5-62.1 22.2-90.9 1.1-2.2 2.3-4.4 3.5-6.5C40.8 196.1 0 255.5 0 322.7c0 60.3 32.5 116.3 89.3 153.9 10.5 41.2-13.8 84.8-14.1 85.3 -1.4 2.6-1.3 5.7 0.3 8.2 1.5 2.2 3.9 3.5 6.5 3.5 0.3 0 0.6 0 0.9 0 28.4-3.2 78.4-32 116.3-56.4 12.8 1.7 25.8 2.6 38.8 2.6 49.8 0 96-12.7 134.3-34.4 -8.5 0.7-17.1 1-25.7 1C275.8 486.3 208.9 463.2 158.3 421.3z"></path>
+                            </svg>
+                        </div>
+                        <div class="box-txt">
+                            <i>Live Chat</i><a href="https://direct.lc.chat/1067387/42" target="_blank">Klik disini</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-icon">
+                            <i class="fas fa-envelope-open"></i>
+                        </div>
+                        <div class="box-txt">
+                            <i>Kritik &amp; Saran</i><a href="" class="open-new-window">Klik Disini</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" class="svg-icon">
+                            <path d="M90 43.8c0 24.2-19.8 43.8-44.2 43.8 -7.7 0-15-2-21.4-5.5L0 90l8-23.5c-4-6.6-6.3-14.4-6.3-22.6C1.6 19.6 21.4 0 45.8 0 70.2 0 90 19.6 90 43.8zM45.8 7c-20.5 0-37.1 16.5-37.1 36.9 0 8.1 2.6 15.5 7.1 21.6L11.1 79.1l14.3-4.5c5.9 3.9 12.9 6.1 20.4 6.1 20.5 0 37.1-16.5 37.1-36.9S66.3 7 45.8 7zM68.1 53.9c-0.3-0.4-1-0.7-2.1-1.3 -1.1-0.5-6.4-3.1-7.4-3.5 -1-0.4-1.7-0.5-2.4 0.5 -0.7 1.1-2.8 3.5-3.4 4.2 -0.6 0.7-1.3 0.8-2.3 0.3 -1.1-0.5-4.6-1.7-8.7-5.3 -3.2-2.8-5.4-6.4-6-7.4 -0.6-1.1-0.1-1.7 0.5-2.2 0.5-0.5 1.1-1.3 1.6-1.9 0.5-0.6 0.7-1.1 1.1-1.8 0.4-0.7 0.2-1.3-0.1-1.9 -0.3-0.5-2.4-5.8-3.3-8 -0.9-2.1-1.8-1.8-2.4-1.8 -0.6 0-1.4-0.1-2.1-0.1 -0.7 0-1.9 0.3-2.9 1.3 -1 1.1-3.8 3.7-3.8 9 0 5.3 3.9 10.4 4.4 11.1 0.5 0.7 7.5 11.9 18.5 16.2C58.2 65.8 58.2 64.3 60.2 64.2c2-0.2 6.4-2.6 7.3-5.1C68.4 56.5 68.4 54.4 68.1 53.9z"></path>
+                            </svg>
+                        </div>
+                        <div class="box-txt">
+                            <i>Whatsapp</i><a href="https://api.whatsapp.com/send?phone=+6287892248079" target="_blank" rel="nofollow" class="no-letter-spacing">+6287892248079</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-icon">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram-plane" class="svg-inline--fa fa-telegram-plane fa-w-14 svg-icon" role="img" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 448 512">
+                            <path fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
+                            </svg>
+                        </div>
+                        <div class="box-txt">
+                            <i>Telegram</i><a href="https://t.me/depo168cs" target="_blank" rel="nofollow">Klik Disini</a>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        <footer id="site-footer">
+            <div class="sponsor">
+                <amp-img src="./dpv1/m/images/gt.svg"
+                width="40"
+                height="40"
+                layout="fixed"
+                alt="">
+                </amp-img>
+                <amp-img src="./dpv1/m/images/responsible-gamcare.png"
+                width="40"
+                height="40"
+                layout="fixed"
+                alt="">
+                </amp-img>
+                <amp-img src="./dpv1/m/images/18.png"
+                width="40"
+                height="40"
+                layout="fixed"
+                alt="">
+                </amp-img>
+                <amp-img src="./dpv1/m/images/rga.png"
+                width="110"
+                height="40"
+                layout="fixed"
+                alt="">
+                </amp-img>
+                <amp-img src="./dpv1/m/images/IOM.png"
+                width="40"
+                height="40"
+                layout="fixed"
+                alt="">
+                </amp-img>
+            </div>
+            <p class="text-center copyright">&copy; 2022 Depo168 All rights reserved | 18+</p>
+        </footer>
+
+    </body>
+</html>
