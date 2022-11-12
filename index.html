@@ -294,6 +294,14 @@
                 margin: 0 auto;
             }
 
+            .hamburger-left{
+                padding: 10px 0 0 15px
+            }
+
+            .hamburger-right{
+                padding: 0 10px 0 0;
+            }
+
             #sidebar1{
             text-align: center
             }
@@ -316,13 +324,12 @@
    </style>
 </head>
     <body>
-
+        <!-- Burger Menu for Mobile-->
         <div class="mobile-ver">
-            <!-- Burger Menu for Mobile-->
             <div class="container top-nav">
                 <div class="login">
-                    <header class="headerbar">
-                        <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger"><i class="fa fa-user"></i></div>
+                    <header class="headerbar hamburger-left">
+                        <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger "><i class="fa fa-user"></i></div>
                     </header>
                     <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
                         <amp-img src="./dpv1/m/images/logo@2x.png"
@@ -372,7 +379,7 @@
                     alt="">
                 </div>
 
-                <header class="headerbar1">
+                <header class="headerbar1 hamburger-right">
                     <div role="button" on="tap:sidebar2.toggle" tabindex="0" class="hamburger">☰</div>
                 </header>
                 <amp-sidebar id="sidebar2" layout="nodisplay" side="right">
@@ -427,6 +434,36 @@
                 alt="">
                 </amp-img>
             </div>
+
+            <!-- <amp-mega-menu height="30" layout="fixed-height">
+                <nav>
+                  <ul>
+                    <li>
+                      <span role="button">Image</span>
+                      <div role="dialog">
+                        <amp-img
+                          src="/static/inline-examples/images/image1.jpg"
+                          width="300"
+                          height="200"
+                        ></amp-img>
+                      </div>
+                    </li>
+                    <li>
+                      <span role="button">List</span>
+                      <div role="dialog">
+                        <ol>
+                          <li>item 1</li>
+                          <li>item 2</li>
+                          <li>item 3</li>
+                        </ol>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="https://amp.dev/">Link</a>
+                    </li>
+                  </ul>
+                </nav>
+              </amp-mega-menu> -->
 
             <!-- <div class="container">
                 <div class="center-box">
@@ -513,6 +550,11 @@
                 </div>
                 <p class="text-center copyright">&copy; 2022 Depo168 All rights reserved | 18+</p>
             </footer>
+        </div>
+
+        <!-- Burger Menu for Mobile-->
+        <div class="desktop-ver">
+
         </div>
     </body>
 </html>
