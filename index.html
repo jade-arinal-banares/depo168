@@ -427,19 +427,17 @@
                 color: #eccb5b;
             }
 
-            .box-three .center-box {
-                background: rgb(0 0 0 / 40%);
-                padding: 10px 15px;
-            }
-
             .center-box {
                 position: relative;
                 padding-bottom: 20px;
             }
-
+            .center-box h3{
+                padding-bottom: 25px;
+            }
             .box-three {
                 padding: 0;
                 color: #eccb5b;
+                margin-bottom: 10px;
             }
 
             .box-three .box-wrap {
@@ -467,32 +465,125 @@
             .box-icon {
                 left: 0;
             }
-
+            .cs-container{
+                display: flex;
+                justify-content: space-between;
+            }
             .box-icon {
                 position: absolute;
                 top: 0;
                 left: 10px;
-                font-size: 2.429rem;
+                font-size: 32px;
                 line-height: 35px;
             }
-            .clearfix:before{
-                display: table;
-                content: " ";
+             .box-three .center-box {
+                background: rgb(0 0 0 / 40%);
+                padding: 10px 15px;
             }
-            .clearfix:after{
-                clear: both;
+            .box-txt i{
+                padding-left: 55px;
+                font-style: normal;
+                display: block;
+                text-transform: uppercase;
+                color: #fff;
             }
-            .clearfix:after{
-                display: table;
-                content: " ";
+            .box-txt a{
+                padding-left: 55px;
+                font-style: normal;
+                color:rgb(236, 203, 91);
+            }
+        }
+        .top-head{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 30px;
+        }
+        amp-mega-menu .login-desktop {
+            background-color: transparent;
+        }
+        .t-buttons i{
+            color: #eccb5b;
+        }
+        .t-buttons a{
+            color: #fff;
+        }
+        .separator-2{
+            margin: 0 10px;
+            display: inline-block;
+            width: 1px;
+            height: 20px;
+            background: #323232;
+            line-height: 10px;
+            box-shadow: 1px 0px 0px 0px #212121;
+            vertical-align: middle;
+        }
+        .site-header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .site-nav li{
+            list-style: none;
+            text-align: center;
+            font-size: 27px;
+            text-transform: uppercase;
+            padding: 0;
+            margin-bottom: 0;
+            letter-spacing: 0;
+        }
+        .site-nav li span{
+            font-size: 14px;
+        }
+        .site-nav ul {
+
+            display: flex;
+        }
+       
+        .svg-icon {
+            display: inline-block;
+            fill: currentColor;
+            height: 1em;
+            position: relative;
+            top: -0.0625em;
+            vertical-align: middle;
+            width: 1em;
+        }
+        .marquee {
+            height: 25px;
+            width: 100%;
+
+            overflow: hidden;
+            position: relative;
+        }
+
+        .marquee div {
+            display: block;
+            width: 200%;
+            height: 30px;
+
+            position: absolute;
+            overflow: hidden;
+            animation: marquee 20s linear infinite;
+        }
+
+        .marquee span {
+            float: left;
+            width: 50%;
+        }
+
+        @keyframes  marquee {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: -100%;
             }
         }
 
-        
    </style>
 </head>
     <body>
-        <!-- Burger Menu for Mobile-->
+        <!-- Mobile -->
         <div class="mobile-ver">
             <div class="container top-nav">
                 <div class="login">
@@ -866,54 +957,60 @@
 
                     <div class="box-three">
                         <div class="container">
-                        <div class="center-box">
-                        <h3>Customer Service</h3>
-                        <div class="box-wrap">
-                        <ul class="box-list clearfix">
-                        <li>
-                        <div class="box-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" class="svg-icon">
-                        <path d="M612 251.2c0-117.3-113.8-212.7-253.6-212.7 -139.8 0-253.6 95.4-253.6 212.7s113.8 212.7 253.6 212.7c11.8 0 23.6-0.7 35.2-2 53.9 34.2 93.6 52.9 118.3 55.7 0.9 0.1 1.7 0.1 2.6 0.1 7.9 0 15.2-3.9 19.6-10.6 4.9-7.4 5.2-16.8 0.9-24.5 -0.2-0.4-19.2-35.1-13.7-68.2C579 374 612 314.8 612 251.2zM289.5 283.3c-20.8 0-37.6-16.8-37.6-37.6 0-20.7 16.8-37.6 37.6-37.6 20.7 0 37.6 16.8 37.6 37.6C327.1 266.5 310.3 283.3 289.5 283.3zM427.3 283.3c-20.8 0-37.6-16.8-37.6-37.6 0-20.7 16.8-37.6 37.6-37.6 20.7 0 37.6 16.8 37.6 37.6C464.8 266.5 448 283.3 427.3 283.3z"></path>
-                        <path d="M158.3 421.3c-25.2-20.8-45-45.2-59-72.5 -14.7-28.7-22.2-59.3-22.2-90.9 0-31.6 7.5-62.1 22.2-90.9 1.1-2.2 2.3-4.4 3.5-6.5C40.8 196.1 0 255.5 0 322.7c0 60.3 32.5 116.3 89.3 153.9 10.5 41.2-13.8 84.8-14.1 85.3 -1.4 2.6-1.3 5.7 0.3 8.2 1.5 2.2 3.9 3.5 6.5 3.5 0.3 0 0.6 0 0.9 0 28.4-3.2 78.4-32 116.3-56.4 12.8 1.7 25.8 2.6 38.8 2.6 49.8 0 96-12.7 134.3-34.4 -8.5 0.7-17.1 1-25.7 1C275.8 486.3 208.9 463.2 158.3 421.3z"></path>
-                        </svg>
+                            <div class="center-box">
+                                <h3>Customer Service</h3>
+                                <div class="box-wrap">
+                                    <ul class="box-list">
+                                        <div class="cs-container">
+                                            <li>
+                                                <div class="box-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" class="svg-icon">
+                                                    <path d="M612 251.2c0-117.3-113.8-212.7-253.6-212.7 -139.8 0-253.6 95.4-253.6 212.7s113.8 212.7 253.6 212.7c11.8 0 23.6-0.7 35.2-2 53.9 34.2 93.6 52.9 118.3 55.7 0.9 0.1 1.7 0.1 2.6 0.1 7.9 0 15.2-3.9 19.6-10.6 4.9-7.4 5.2-16.8 0.9-24.5 -0.2-0.4-19.2-35.1-13.7-68.2C579 374 612 314.8 612 251.2zM289.5 283.3c-20.8 0-37.6-16.8-37.6-37.6 0-20.7 16.8-37.6 37.6-37.6 20.7 0 37.6 16.8 37.6 37.6C327.1 266.5 310.3 283.3 289.5 283.3zM427.3 283.3c-20.8 0-37.6-16.8-37.6-37.6 0-20.7 16.8-37.6 37.6-37.6 20.7 0 37.6 16.8 37.6 37.6C464.8 266.5 448 283.3 427.3 283.3z"></path>
+                                                    <path d="M158.3 421.3c-25.2-20.8-45-45.2-59-72.5 -14.7-28.7-22.2-59.3-22.2-90.9 0-31.6 7.5-62.1 22.2-90.9 1.1-2.2 2.3-4.4 3.5-6.5C40.8 196.1 0 255.5 0 322.7c0 60.3 32.5 116.3 89.3 153.9 10.5 41.2-13.8 84.8-14.1 85.3 -1.4 2.6-1.3 5.7 0.3 8.2 1.5 2.2 3.9 3.5 6.5 3.5 0.3 0 0.6 0 0.9 0 28.4-3.2 78.4-32 116.3-56.4 12.8 1.7 25.8 2.6 38.8 2.6 49.8 0 96-12.7 134.3-34.4 -8.5 0.7-17.1 1-25.7 1C275.8 486.3 208.9 463.2 158.3 421.3z"></path>
+                                                    </svg>
+                                                </div>
+                                                <div class="box-txt">
+                                                    <i>Live Chat</i><a href="#" target="_blank">Klik disini</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="box-icon">
+                                                    <i class="fa fa-envelope-open"></i>
+                                                </div>
+                                                <div class="box-txt">
+                                                    <i>Kritik &amp; Saran</i><a href="#" class="open-new-window">Klik Disini</a>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="cs-container">
+                                        <li>
+                                            <div class="box-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" class="svg-icon">
+                                                <path d="M90 43.8c0 24.2-19.8 43.8-44.2 43.8 -7.7 0-15-2-21.4-5.5L0 90l8-23.5c-4-6.6-6.3-14.4-6.3-22.6C1.6 19.6 21.4 0 45.8 0 70.2 0 90 19.6 90 43.8zM45.8 7c-20.5 0-37.1 16.5-37.1 36.9 0 8.1 2.6 15.5 7.1 21.6L11.1 79.1l14.3-4.5c5.9 3.9 12.9 6.1 20.4 6.1 20.5 0 37.1-16.5 37.1-36.9S66.3 7 45.8 7zM68.1 53.9c-0.3-0.4-1-0.7-2.1-1.3 -1.1-0.5-6.4-3.1-7.4-3.5 -1-0.4-1.7-0.5-2.4 0.5 -0.7 1.1-2.8 3.5-3.4 4.2 -0.6 0.7-1.3 0.8-2.3 0.3 -1.1-0.5-4.6-1.7-8.7-5.3 -3.2-2.8-5.4-6.4-6-7.4 -0.6-1.1-0.1-1.7 0.5-2.2 0.5-0.5 1.1-1.3 1.6-1.9 0.5-0.6 0.7-1.1 1.1-1.8 0.4-0.7 0.2-1.3-0.1-1.9 -0.3-0.5-2.4-5.8-3.3-8 -0.9-2.1-1.8-1.8-2.4-1.8 -0.6 0-1.4-0.1-2.1-0.1 -0.7 0-1.9 0.3-2.9 1.3 -1 1.1-3.8 3.7-3.8 9 0 5.3 3.9 10.4 4.4 11.1 0.5 0.7 7.5 11.9 18.5 16.2C58.2 65.8 58.2 64.3 60.2 64.2c2-0.2 6.4-2.6 7.3-5.1C68.4 56.5 68.4 54.4 68.1 53.9z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="box-txt">
+                                                <i>Whatsapp</i><a href="#" target="_blank" rel="nofollow" class="no-letter-spacing">+6287892248079</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box-icon">
+                                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram-plane" class="svg-inline--fa fa-telegram-plane fa-w-14 svg-icon" role="img" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 448 512">
+                                                <path fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="box-txt">
+                                                <i>Telegram</i><a href="#" target="_blank" rel="nofollow">Klik Disini</a>
+                                            </div>
+                                        </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="box-txt">
-                        <i>Live Chat</i><a href="https://direct.lc.chat/1067387/42" target="_blank">Klik disini</a>
-                        </div>
-                        </li>
-                        <li>
-                        <div class="box-icon">
-                        <i class="fas fa-envelope-open"></i>
-                        </div>
-                        <div class="box-txt">
-                        <i>Kritik &amp; Saran</i><a href="" class="open-new-window">Klik Disini</a>
-                        </div>
-                        </li>
-                        <li>
-                        <div class="box-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" class="svg-icon">
-                        <path d="M90 43.8c0 24.2-19.8 43.8-44.2 43.8 -7.7 0-15-2-21.4-5.5L0 90l8-23.5c-4-6.6-6.3-14.4-6.3-22.6C1.6 19.6 21.4 0 45.8 0 70.2 0 90 19.6 90 43.8zM45.8 7c-20.5 0-37.1 16.5-37.1 36.9 0 8.1 2.6 15.5 7.1 21.6L11.1 79.1l14.3-4.5c5.9 3.9 12.9 6.1 20.4 6.1 20.5 0 37.1-16.5 37.1-36.9S66.3 7 45.8 7zM68.1 53.9c-0.3-0.4-1-0.7-2.1-1.3 -1.1-0.5-6.4-3.1-7.4-3.5 -1-0.4-1.7-0.5-2.4 0.5 -0.7 1.1-2.8 3.5-3.4 4.2 -0.6 0.7-1.3 0.8-2.3 0.3 -1.1-0.5-4.6-1.7-8.7-5.3 -3.2-2.8-5.4-6.4-6-7.4 -0.6-1.1-0.1-1.7 0.5-2.2 0.5-0.5 1.1-1.3 1.6-1.9 0.5-0.6 0.7-1.1 1.1-1.8 0.4-0.7 0.2-1.3-0.1-1.9 -0.3-0.5-2.4-5.8-3.3-8 -0.9-2.1-1.8-1.8-2.4-1.8 -0.6 0-1.4-0.1-2.1-0.1 -0.7 0-1.9 0.3-2.9 1.3 -1 1.1-3.8 3.7-3.8 9 0 5.3 3.9 10.4 4.4 11.1 0.5 0.7 7.5 11.9 18.5 16.2C58.2 65.8 58.2 64.3 60.2 64.2c2-0.2 6.4-2.6 7.3-5.1C68.4 56.5 68.4 54.4 68.1 53.9z"></path>
-                        </svg>
-                        </div>
-                        <div class="box-txt">
-                        <i>Whatsapp</i><a href="https://api.whatsapp.com/send?phone=+6287892248079" target="_blank" rel="nofollow" class="no-letter-spacing">+6287892248079</a>
-                        </div>
-                        </li>
-                        <li>
-                        <div class="box-icon">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram-plane" class="svg-inline--fa fa-telegram-plane fa-w-14 svg-icon" role="img" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 448 512">
-                        <path fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
-                        </svg>
-                        </div>
-                        <div class="box-txt">
-                        <i>Telegram</i><a href="https://t.me/depo168cs" target="_blank" rel="nofollow">Klik Disini</a>
-                        </div>
-                        </li>
-                        </ul>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
+                    </div>
+                    
+                    
                     
                     <footer id="site-footer">
                         <div class="sponsor">
@@ -950,12 +1047,135 @@
                         </div>
                         <p class="text-center copyright">&copy; 2022 Depo168 All rights reserved | 18+</p>
                     </footer>
-             
         </div>
 
-        <!-- Burger Menu for Mobile-->
+        <!-- Desktop -->
         <div class="desktop-ver">
+            <div class="top-head">
+                <div class="date-screen fl">
+                    <i class="fa fa-clock-o"></i>
+                    <span class="date" id="nowDate">14/11/2022,</span>
+                    <span class="time" id="nowTime">14:06:45</span>
+                </div>
+                <div class="t-buttons fr" style="display: flex">
+                    <a href="" class="open-new-window" rel="nofollow">
+                        <span>
+                            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                        </span>KRITIK &amp; SARAN 
+                    </a>
+                        <span class="separator-2" style="margin-right: 5px;"></span>
+                    <a href="" class="open-new-window" rel="nofollow">
+                        <span>
+                            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                        </span>AFILIASI 
+                    </a>
+                    <span class="separator-2" style="margin-right: 5px;"></span>
+                    <amp-mega-menu height="30" layout="fixed-height">
+                        <nav class="login-desktop">
+                          <ul>
+                            <li>
+                              <span role="button">LOGIN</span>
+                              <div role="dialog">
+                                <h1>Test</h1>
+                              </div>
+                            </li>
+                          </ul>
+                        </nav>
+                      </amp-mega-menu>
+                      <a href="" class="open-new-window" rel="nofollow">DAFTAR</a>
+                </div>
+               
+                
+            </div>
 
+            <div class="site-header">
+                <amp-img src="./dpv1/m/images/logo@2x.png"
+                    width="260"
+                    height="90"
+                    layout="fixed"
+                    alt="">
+                </amp-img>
+
+                <amp-mega-menu height="30" layout="fixed-height">
+                    <nav>
+                      <ul>
+                        <li class="menu-item">
+                          <span role="button">List 1</span>
+                          <div role="dialog">
+                            <ol>
+                              <li>item 1.1</li>
+                              <li>item 1.2</li>
+                              <li>item 1.3</li>
+                            </ol>
+                          </div>
+                        </li>
+                        <li class="menu-item">
+                          <span role="button">List 2</span>
+                          <div role="dialog">
+                            <ol>
+                              <li>item 2.1</li>
+                              <li>item 2.2</li>
+                              <li>item 2.3</li>
+                            </ol>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav>
+                  </amp-mega-menu>
+                <nav class="site-nav">
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <span>Home</span>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="hot-and-new.html">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fire-alt" class="svg-icon fa-fire-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 670">
+                                    <path fill="currentColor" d="M342,370.1c-1.5,0.7-3.1,2.2-3.8,3.7c-1.3,2.7-2.2,5.7-2.9,8.6c-5.7,25.2-11.3,50.4-16.9,75.6 c-0.9,4.1-1.5,8.2-2,12.4c-0.3,3,1.3,4.4,4.5,4.5c3.6,0.1,6.1-1.3,7.3-4.8c1.3-3.5,2.4-7.1,3.3-10.7c4.8-20.9,9.4-41.9,14.1-62.8 c1.6-7.1,3-14.2,4.5-21.3C350.3,370.1,346.9,367.8,342,370.1z"></path>
+                                    <path fill="currentColor" d="M557.8,293.8c-10.3,9.1-8.5,8.1-16,11.5c-5.3,2.4-14.2,4.9-34.2,2.4c-13.3-1.7-31.7-7.6-39.8-22.8 c-5.2-9.9-6.8-22.4-6.8-22.4c-0.2-9.1-1.5-14.9,11.8-30.7c10.2-12.2,17.9-16.9,22-20.9c7.9-7.5,20.4-15.6,28-31.5 c3-6.4,7.5-27-1.3-53C508.3,87,475,76.6,475,76.6s31.5,38.7,28.9,62.6c-1.8,16.5-13.6,41.6-50.3,46.5c-15.2,2-47.7-11.7-57.2-21.7 c-13.7-14.5-22.2-33.5-25.1-56.1c-1.6-12.3,0.4-37,8.2-48.6c17.3-25.7,56.3-31.7,56.3-31.7s-45.2-9.7-75.1,10.2 c-18.5,12.3-44.4,33.5-33.4,86.8c3.6,17.6,29.2,65.1,28.9,88.4c-0.2,17.8-8.7,72.8-45.9,79.7c-17,3.2-25.8,1.9-35.4-2.8 c-36.3-17.9-32.8-75.3-28-96.2c8.1-35.1,12.6-61.5-1.4-99.6c-9-24.8-22-32.3-32-43.3c-9-10.2-52.8-38.8-59.2-43 c6.4,5.6,44.5,54.4,50.4,78.4c10.7,44.1-13,76.9-28.6,92.2c-18.5,18.2-28.2,24.7-39.9,38.9c-12.3,14.8-32.9,38.3-42.2,58.2 l-0.4-0.1c-0.1-1-0.4-1.8-0.8-2.3c-2.7-3.5-7.6-12.1-9.3-14c-25.3-28.2-71.2-14-77.3-12.9c5.5,0.5,45.3,5.1,54.9,33.7 c8.8,26.2,10.5,54.3,10.8,68.1c-1.2,9.9-1.9,20-1.9,30.3c0,135.8,110,245.8,245.8,245.8c103.9,0,192.8-64.5,228.7-155.7 c7.4-17,18.9-49.8,22.8-96.9c0.9-11.2-0.2-34.6,7.4-54.4c9.7-25,29.4-31.8,29.4-31.8S582,272.7,557.8,293.8z M255.6,495.9 c-0.2,0.9-0.4,1.5-1.6,1.4c-13.8,0-27.7,0-41.5,0c-0.2,0-0.4-0.1-0.8-0.2c4.6-20.9,9.3-41.7,13.9-62.7c-4.4,0-8.6,0-12.9,0 c-1.4,6.1-2.7,12.2-4.1,18.3c-3.2,14.4-6.4,28.8-9.6,43.2c-0.2,0.9-0.5,1.4-1.6,1.4c-13.8,0-27.5,0-41.3,0c-0.3,0-0.5-0.1-0.9-0.2 c1.2-5.4,2.4-10.7,3.6-16c8.1-36.3,16.2-72.7,24.2-109c1.7-7.8,3.5-15.6,5.2-23.4c0.2-0.9,0.4-1.4,1.6-1.4c13.8,0,27.7,0,41.5,0 c0.2,0,0.4,0.1,0.8,0.2c-3.9,17.7-7.9,35.4-11.8,53.3c4.4,0,8.6,0,12.9,0c4-17.8,7.9-35.6,11.9-53.4c14.6,0,29,0,43.6,0 c-1,4.8-2.1,9.4-3.1,14c-8.6,38.9-17.3,77.8-25.9,116.6C258.2,484.1,256.8,490,255.6,495.9z M392,380.1 c-3.5,18.8-7.5,37.5-11.6,56.1c-1.9,8.9-4.2,17.7-6.7,26.5c-4.8,17.4-16.9,28.4-34.6,34.2c-7.5,2.5-15.3,3.3-23.1,3.4 c-8.4,0-16.6-1-24.2-4.2c-12.6-5.3-19.9-17.1-17.6-30c3-16.7,6.4-33.3,10-49.9c2.5-11.7,5.4-23.3,8.5-34.9 c4.6-17,16.3-28,33.5-33.7c14.4-4.8,29.2-5.3,43.9-1.1C386.6,351.4,395,364.2,392,380.1z M496.1,377.4c-8.6,0-17.1,0-25.8,0 c-8.9,40-17.8,79.9-26.7,119.9c-14.5,0-28.9,0-43.6,0c8.9-39.9,17.7-79.7,26.7-119.9c-8.7,0-17.1,0-25.7,0 c2.2-10.1,4.4-19.9,6.6-29.9c31.7,0,63.3,0,95.1,0C500.6,357.5,498.4,367.3,496.1,377.4z"></path>
+                                    <path fill="currentColor" d="M111.5,193.3c0,0-13.8-12.7-17.3-21.9c-4.4-11.8-0.4-21.5,4.1-28.8c12.2-19.4,25.2-28.8,28.3-38.7 C132.7,84.6,116,59,116,59s27.8,32.1,34,46.8c4.2,10,11.2,32-4.4,45.9c-7.5,6.6-27.2,11.9-31.7,23.1 C110.8,182.2,111.5,193.3,111.5,193.3z"></path>
+                                    </svg>
+                                   
+                                </a>
+                            </div>
+                            
+                            <span>Hot &amp; New</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+             
+            <amp-img src="./dpv1/m/images/indo_zO9BX6FY_20220926180219.jpg"
+            width="1385"
+            height="470"
+            layout="intrinsic"
+            alt="">
+            </amp-img>
+
+            <!--marquee-->
+            
+            <div class="ann-wrapper">
+                <div class="clearfix pt-2">
+                    <div class="pull-left pointer">
+                        <div>
+                            <i class="icon-megaphone"></i>
+                        </div>
+                    </div>
+                    <div class="ann-content">
+
+                        <div class="marquee" id="marquee">
+                            <div>
+                                <span> Welcome to Depoi168.com ! Welcome to Depoi168.com</span>
+                                <span> Welcome to Depoi168.com ! Welcome to Depoi168.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of marquee-->
         </div>
     </body>
 </html>
