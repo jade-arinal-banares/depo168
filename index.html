@@ -496,7 +496,8 @@
         .top-head{
             display: flex;
             justify-content: space-between;
-            padding: 10px 30px;
+            padding: 10px 30px 0 30px;
+            background: rgb(0 0 0 / 40%);
         }
         amp-mega-menu .login-desktop {
             background-color: transparent;
@@ -520,6 +521,9 @@
         .site-header{
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            padding-left: 30px;
+      
         }
         .site-nav li{
             list-style: none;
@@ -530,12 +534,32 @@
             margin-bottom: 0;
             letter-spacing: 0;
         }
+        .site-nav i, .site-nav svg{
+            font-size: 34px;
+        }
+        .site-nav li{
+            padding: 0 10px;
+        }
+
+        .site-nav li:hover{
+            color:rgb(236, 203, 91)
+        }
+        .site-nav li:first-child{
+            color:rgb(236, 203, 91)
+        }
+
         .site-nav li span{
-            font-size: 14px;
+            font-size: 12px;
         }
         .site-nav ul {
-
             display: flex;
+            color: white;
+            padding: 10px 30px;
+        }
+
+        .site-nav{
+            padding-top: 20px;
+            background-color: transparent;
         }
        
         .svg-icon {
@@ -547,19 +571,27 @@
             vertical-align: middle;
             width: 1em;
         }
+        .ann-content{
+            display: flex;
+            padding: 10px 30px;
+        }
+        .site-announcement span {
+            background: rgb(0 0 0 / 40%);
+            display: inline-block;
+            padding: 8px 15px;
+        }
         .marquee {
             height: 25px;
             width: 100%;
-
             overflow: hidden;
             position: relative;
+            padding: 10px 0;
         }
 
         .marquee div {
             display: block;
             width: 200%;
             height: 30px;
-
             position: absolute;
             overflow: hidden;
             animation: marquee 20s linear infinite;
@@ -580,6 +612,33 @@
             }
         }
 
+        .site-info{
+            display: flex;
+            padding: 10px 30px;
+        }
+
+        .pj-txt {
+            position: absolute;
+            font-weight: 900;
+            font-size: 32px;
+            color: #fff;
+            top: 31px;
+            padding-left: 85px;
+            width: 680px;
+            text-align: center;
+        }
+        .col-sm-4 {
+           width: 33.33333333%;
+        }
+
+        .box-three {
+            padding: 30px 0;
+            color: #eccb5b;
+        }
+        .box-three .row-2>div {
+            background: rgb(0 0 0 / 40%);
+            height: 300px;
+        }
    </style>
 </head>
     <body>
@@ -1096,11 +1155,16 @@
                     alt="">
                 </amp-img>
 
-                <amp-mega-menu height="30" layout="fixed-height">
-                    <nav>
+                <amp-mega-menu height="130" layout="fixed-height">
+                    <nav class="site-nav">
                       <ul>
-                        <li class="menu-item">
-                          <span role="button">List 1</span>
+                        <li>
+                          <span role="button">
+                            <div>
+                                <i class="fa fa-home"></i>
+                            </div>
+                            <span>Home</span>
+                          </span>
                           <div role="dialog">
                             <ol>
                               <li>item 1.1</li>
@@ -1109,20 +1173,212 @@
                             </ol>
                           </div>
                         </li>
-                        <li class="menu-item">
-                          <span role="button">List 2</span>
-                          <div role="dialog">
-                            <ol>
-                              <li>item 2.1</li>
-                              <li>item 2.2</li>
-                              <li>item 2.3</li>
-                            </ol>
-                          </div>
-                        </li>
+                        <li>
+                            <span role="button">
+                                <div>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fire-alt" class="svg-icon fa-fire-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 670">
+                                    <path fill="currentColor" d="M342,370.1c-1.5,0.7-3.1,2.2-3.8,3.7c-1.3,2.7-2.2,5.7-2.9,8.6c-5.7,25.2-11.3,50.4-16.9,75.6 c-0.9,4.1-1.5,8.2-2,12.4c-0.3,3,1.3,4.4,4.5,4.5c3.6,0.1,6.1-1.3,7.3-4.8c1.3-3.5,2.4-7.1,3.3-10.7c4.8-20.9,9.4-41.9,14.1-62.8 c1.6-7.1,3-14.2,4.5-21.3C350.3,370.1,346.9,367.8,342,370.1z"></path>
+                                    <path fill="currentColor" d="M557.8,293.8c-10.3,9.1-8.5,8.1-16,11.5c-5.3,2.4-14.2,4.9-34.2,2.4c-13.3-1.7-31.7-7.6-39.8-22.8 c-5.2-9.9-6.8-22.4-6.8-22.4c-0.2-9.1-1.5-14.9,11.8-30.7c10.2-12.2,17.9-16.9,22-20.9c7.9-7.5,20.4-15.6,28-31.5 c3-6.4,7.5-27-1.3-53C508.3,87,475,76.6,475,76.6s31.5,38.7,28.9,62.6c-1.8,16.5-13.6,41.6-50.3,46.5c-15.2,2-47.7-11.7-57.2-21.7 c-13.7-14.5-22.2-33.5-25.1-56.1c-1.6-12.3,0.4-37,8.2-48.6c17.3-25.7,56.3-31.7,56.3-31.7s-45.2-9.7-75.1,10.2 c-18.5,12.3-44.4,33.5-33.4,86.8c3.6,17.6,29.2,65.1,28.9,88.4c-0.2,17.8-8.7,72.8-45.9,79.7c-17,3.2-25.8,1.9-35.4-2.8 c-36.3-17.9-32.8-75.3-28-96.2c8.1-35.1,12.6-61.5-1.4-99.6c-9-24.8-22-32.3-32-43.3c-9-10.2-52.8-38.8-59.2-43 c6.4,5.6,44.5,54.4,50.4,78.4c10.7,44.1-13,76.9-28.6,92.2c-18.5,18.2-28.2,24.7-39.9,38.9c-12.3,14.8-32.9,38.3-42.2,58.2 l-0.4-0.1c-0.1-1-0.4-1.8-0.8-2.3c-2.7-3.5-7.6-12.1-9.3-14c-25.3-28.2-71.2-14-77.3-12.9c5.5,0.5,45.3,5.1,54.9,33.7 c8.8,26.2,10.5,54.3,10.8,68.1c-1.2,9.9-1.9,20-1.9,30.3c0,135.8,110,245.8,245.8,245.8c103.9,0,192.8-64.5,228.7-155.7 c7.4-17,18.9-49.8,22.8-96.9c0.9-11.2-0.2-34.6,7.4-54.4c9.7-25,29.4-31.8,29.4-31.8S582,272.7,557.8,293.8z M255.6,495.9 c-0.2,0.9-0.4,1.5-1.6,1.4c-13.8,0-27.7,0-41.5,0c-0.2,0-0.4-0.1-0.8-0.2c4.6-20.9,9.3-41.7,13.9-62.7c-4.4,0-8.6,0-12.9,0 c-1.4,6.1-2.7,12.2-4.1,18.3c-3.2,14.4-6.4,28.8-9.6,43.2c-0.2,0.9-0.5,1.4-1.6,1.4c-13.8,0-27.5,0-41.3,0c-0.3,0-0.5-0.1-0.9-0.2 c1.2-5.4,2.4-10.7,3.6-16c8.1-36.3,16.2-72.7,24.2-109c1.7-7.8,3.5-15.6,5.2-23.4c0.2-0.9,0.4-1.4,1.6-1.4c13.8,0,27.7,0,41.5,0 c0.2,0,0.4,0.1,0.8,0.2c-3.9,17.7-7.9,35.4-11.8,53.3c4.4,0,8.6,0,12.9,0c4-17.8,7.9-35.6,11.9-53.4c14.6,0,29,0,43.6,0 c-1,4.8-2.1,9.4-3.1,14c-8.6,38.9-17.3,77.8-25.9,116.6C258.2,484.1,256.8,490,255.6,495.9z M392,380.1 c-3.5,18.8-7.5,37.5-11.6,56.1c-1.9,8.9-4.2,17.7-6.7,26.5c-4.8,17.4-16.9,28.4-34.6,34.2c-7.5,2.5-15.3,3.3-23.1,3.4 c-8.4,0-16.6-1-24.2-4.2c-12.6-5.3-19.9-17.1-17.6-30c3-16.7,6.4-33.3,10-49.9c2.5-11.7,5.4-23.3,8.5-34.9 c4.6-17,16.3-28,33.5-33.7c14.4-4.8,29.2-5.3,43.9-1.1C386.6,351.4,395,364.2,392,380.1z M496.1,377.4c-8.6,0-17.1,0-25.8,0 c-8.9,40-17.8,79.9-26.7,119.9c-14.5,0-28.9,0-43.6,0c8.9-39.9,17.7-79.7,26.7-119.9c-8.7,0-17.1,0-25.7,0 c2.2-10.1,4.4-19.9,6.6-29.9c31.7,0,63.3,0,95.1,0C500.6,357.5,498.4,367.3,496.1,377.4z"></path>
+                                    <path fill="currentColor" d="M111.5,193.3c0,0-13.8-12.7-17.3-21.9c-4.4-11.8-0.4-21.5,4.1-28.8c12.2-19.4,25.2-28.8,28.3-38.7 C132.7,84.6,116,59,116,59s27.8,32.1,34,46.8c4.2,10,11.2,32-4.4,45.9c-7.5,6.6-27.2,11.9-31.7,23.1 C110.8,182.2,111.5,193.3,111.5,193.3z"></path>
+                                    </svg>
+                                </div>
+                                
+                                <span>Hot &amp; New</span>
+                            </span>
+                            <div role="dialog">
+                              <ol>
+                                <li>item 1.1</li>
+                                <li>item 1.2</li>
+                                <li>item 1.3</li>
+                              </ol>
+                            </div>
+                          </li>
+                       
+                          <li>
+                            <span role="button">
+                                <div>
+                                  <i class="fa fa-futbol-o"></i>
+                                </div>
+                                
+                                <span>Sports</span>
+                            </span>
+                            <div role="dialog">
+                              <ol>
+                                <li>item 1.1</li>
+                                <li>item 1.2</li>
+                                <li>item 1.3</li>
+                              </ol>
+                            </div>
+                          </li>
+
+                          <li>
+                            <span role="button">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300.3" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision" class="svg-icon lc-icon">
+                                        <path class="fil0" d="M138.7 0.2c-21.1 1.9-39.6 7.2-58 16.7-35.6 18.4-62.7 51.1-74.5 89.5-4.6 14.9-6.2 26.2-6.2 43.4-0.1 14.1 0.4 18.6 2.9 31.4 3.3 16.3 12.1 37.3 21.5 51.5 36.5 54.6 102.5 79.4 165.5 62 25.5-7 48.7-20.8 67.6-40.3 45.1-46.5 55.4-116 25.6-173.4-11.7-22.5-29.1-41.9-50.4-56.2-7.8-5.2-22.8-12.8-31.5-16-7.9-2.9-19.6-5.9-28.8-7.3-7.3-1.2-27.1-2-33.7-1.4l0 0zm29.1 27.8c13.7 2.1 24.9 5.6 37.3 11.8 12.3 6.2 22.4 13.4 32 23.1 23.6 23.7 36.1 53.9 36.1 87.2 0 27.6-8.5 52.8-25.3 75.1-13.1 17.3-33.1 32.3-54 40.3-7.3 2.8-19.6 5.9-27.8 7-8.7 1.1-23.5 1.1-32.1 0-22.1-2.9-43.4-12-61.2-26-5.3-4.2-15-13.9-19.2-19.2-11.3-14.3-20.1-32.5-23.9-49.5-4-17.7-4-37.3 0-55.2 3.8-17 12.7-35.4 24-49.5 19.2-24 47.3-40.3 77.9-45 10-1.5 26.2-1.5 36.4-0.1l0 0z"></path>
+                                        <path class="fil0" d="M141.1 32.5c-0.8 0.2-0.8 1.9 0.4 15.7 0.7 8.5 1.3 15.7 1.4 16.1 0 0.6 1.8 0.8 7.1 0.8 5.2 0 7.1-0.2 7.1-0.8 0.1-0.3 0.6-7.6 1.3-16.1l1.4-15.4-1.2-0.3c-1.3-0.4-16-0.4-17.3 0z"></path>
+                                        <path class="fil0" d="M112.6 38.4c-4.2 1.5-8.1 2.8-8.6 3-0.6 0.2-1.1 0.6-1.1 1 0 0.4 2.8 7.2 6.3 15.1 4.9 11.4 6.5 14.5 7.2 14.2 0.5-0.2 3.4-1.2 6.3-2.3 3.1-1.1 5.6-2 5.8-2.2 0.4-0.3-7.5-31.5-7.9-31.5-0.2 0-3.8 1.2-8 2.7l0 0z"></path>
+                                        <path class="fil0" d="M174.9 51.3c-2.2 8.6-3.8 15.8-3.6 15.9 0.1 0.1 2.7 1.1 5.8 2.2 3 1.1 5.9 2.1 6.3 2.3 0.7 0.3 2.3-2.9 7.4-14.6l6.6-15-2.2-0.9c-2.8-1.2-12.8-4.6-14.8-5.1l-1.6-0.4-3.9 15.6 0 0z"></path>
+                                        <path class="fil0" d="M80.3 54.9c-2.5 1.9-5.9 4.6-7.4 6.1l-2.8 2.6 10.9 11.7c5.9 6.5 11 11.7 11.1 11.7 0.2 0 2.2-1.5 4.6-3.3 2.4-1.9 4.8-3.8 5.4-4.2 1.1-0.8 0.8-1.5-7.6-14.4-4.8-7.5-8.9-13.6-9.1-13.6-0.2 0-2.4 1.5-5 3.4z"></path>
+                                        <path class="fil0" d="M205.3 65.2l-8.7 13.6 1.7 1.2c0.9 0.7 3 2.3 4.6 3.6 1.6 1.3 3.3 2.7 3.9 3.1 0.9 0.7 2.4-0.8 12-11.1l11-11.8-2.7-2.5c-2.9-2.7-11.9-9.5-12.5-9.5-0.2 0.1-4.3 6.2-9.2 13.6l0 0z"></path>
+                                        <path class="fil0" d="M137.5 71.8c-34 5.4-60.9 32.5-66 66.6-5.2 34.1 12.7 67.9 44 83.1 11.9 5.8 23.4 8.2 37 7.7 4.5-0.2 10.3-0.7 12.9-1.3 31.3-6.5 55.7-30.9 62.2-62.2 1.5-6.9 1.8-19.8 0.6-27-5.3-34.7-32.2-61.7-66.7-66.9-6.8-1.1-17.4-1.1-24.1 0zm24.9 27c19.1 5.2 32.5 18.2 38.3 37.1 1.5 4.7 1.6 6.1 1.6 14.3 0 8.2-0.2 9.6-1.6 14.3-5.6 18.2-18.4 31.1-36.6 36.6-4.6 1.4-6 1.6-14.3 1.6-8.2 0-9.6-0.2-14.3-1.6-23.4-7.2-38.6-27.2-38.6-51.3 0-21.5 14.3-41.9 34.6-49.2 7.3-2.6 11.3-3.2 19.7-2.9 4.4 0.1 9.1 0.6 11.1 1.1l0 0z"></path>
+                                        <path class="fil0" d="M157.4 112.9c-3.3 1.8-4.3 6.6-2.2 10 1 1.7 1.1 2.1 0.4 3.8-0.4 1.1-1.2 3.2-1.8 4.7l-1.1 2.8-3.3 0c-4.3 0-8.4 1.9-11.4 5.2l-2.2 2.5-4.6-1.6c-4.3-1.5-4.6-1.8-5.2-3.8-2.2-7.3-13-6.3-14 1.3-0.7 4.9 3.1 8.8 8 8 1.4-0.2 3-0.7 3.5-1.2 0.9-0.8 1.3-0.9 3.1-0.2 1.1 0.5 3.2 1.3 4.8 1.8l2.8 1.1 0 3.3c0 4.3 1.9 8.5 5.2 11.4l2.5 2.2-1.6 4.6c-1.3 3.8-1.8 4.7-3 5-2.5 0.7-4.2 2.1-5.1 4.6-0.8 2.1-0.8 2.8-0.2 4.8 1.9 5.8 10.4 6.8 13.1 1.5 1.1-2.2 1.1-5.9 0-7.4-1.2-1.5-1.1-2.3 0.7-7.2l1.6-4.2 3.3 0c4.2 0 8.4-1.9 11.4-5.2l2.2-2.5 4.7 1.7c4.1 1.4 4.7 1.8 5.2 3.5 1.3 3.9 5.5 6.2 9 5 3.2-1.1 5.1-3.6 5.1-7.2 0-2.6-0.2-3.2-2-4.9-1.7-1.7-2.4-2-4.9-2-1.9 0-3.4 0.4-4.3 1.1-1.4 1.1-1.5 1.1-6.2-0.7l-4.9-1.8 0-3.3c0-4.2-1.9-8.4-5.2-11.4l-2.5-2.2 1.7-4.7c1.5-4.2 1.8-4.7 3.3-5 2.3-0.5 5-3.3 5.5-5.8 0.8-4.3-2.7-8.4-7-8.4-1.3 0.1-3.2 0.4-4 0.9l0 0zm-5.5 28.5c0.9 1.5-0.2 3-2.6 3.5-2.3 0.5-4.6 2.9-4.6 4.8 0 2.6-2.9 3.6-4.3 1.5-1.5-2.4 1.8-8.6 5.8-10.3 2.3-1.1 5-0.8 5.8 0.5l0 0z"></path>
+                                        <path class="fil0" d="M54.2 81.1c-2.9 3.9-7.7 11.8-7.7 12.6 0 0.3 6.3 4 14.2 8.2l14.1 7.7 1.3-2.2c0.7-1.2 2.4-3.9 3.8-5.9 1.4-2 2.4-3.9 2.1-4.2-1.3-1.2-24.9-19.4-25.1-19.4-0.1 0-1.3 1.4-2.6 3.2z"></path>
+                                        <path class="fil0" d="M231.1 86.8c-6.1 4.9-11.8 9.3-12.5 9.9l-1.5 1.1 2.1 2.9c1.2 1.6 2.8 4.1 3.7 5.6 0.9 1.6 1.9 2.8 2.2 2.8 1.1 0 28.1-14.8 28.1-15.4 0-1.4-9.2-15.2-10.3-15.5-0.3-0.1-5.6 3.8-11.7 8.6l0 0z"></path>
+                                        <path class="fil0" d="M37.7 113.6c-0.8 2.2-3.2 11.7-3.8 14.7-0.3 2.3-0.3 2.4 1.3 2.8 3.9 0.8 30.3 5.1 30.3 4.9 0.6-0.9 3.2-13.1 2.8-13.5-0.4-0.3-29.3-10.4-29.9-10.4-0.1 0-0.5 0.7-0.8 1.6z"></path>
+                                        <path class="fil0" d="M245.8 117.1c-8 2.8-14.8 5.1-14.9 5.2-0.2 0.1 2.9 13.1 3.2 13.6 0.1 0.2 31.5-5.1 31.8-5.4 0.8-0.8-3.7-18-4.8-18.3-0.3-0.1-7.2 2.1-15.3 4.9z"></path>
+                                        <path class="fil0" d="M31.9 153.4c0 4.3 1.2 15.1 1.7 15.7 0.4 0.4 22.9-3 30.6-4.6 1.4-0.3 1.5-0.3 1.1-3.3-0.2-1.7-0.5-4.8-0.5-7l-0.1-3.9-16.4 0-16.4 0 0 3.2 0 0z"></path>
+                                        <path class="fil0" d="M234.9 154.1c0 2.2-0.2 5.3-0.5 6.9-0.2 1.6-0.4 3-0.4 3.1 0.4 0.5 31.8 5.3 32.2 5 0.5-0.5 1.7-12 1.7-16.1l0-2.8-16.4 0-16.4 0 0 3.9 0 0z"></path>
+                                        <path class="fil0" d="M53.9 183.1c-8.4 2.9-15.3 5.4-15.4 5.5-0.3 0.3 3.4 9 5.6 13.4l2.2 4.4 13.8-7.6c7.6-4.1 14-7.6 14.3-7.7 0.3-0.1 0.1-1-0.5-2.2-0.6-1.1-1.9-4-2.9-6.5l-1.8-4.5-15.3 5.2 0 0z"></path>
+                                        <path class="fil0" d="M227.9 184.3l-2.8 6.5 1.3 0.8c2.3 1.5 26.6 14.4 26.9 14.4 0.9 0 8.5-16.8 7.8-17.4-0.1-0.1-6.7-2.5-14.5-5.2-7.9-2.7-14.7-5-15.2-5.2-0.6-0.2-1.6 1.3-3.6 6.2l0 0z"></path>
+                                        <path class="fil0" d="M60 202.3c-1.2 1.3-1.7 2.3-1.7 3.9 0 2.6 2.6 5.6 5 5.6 3.7 0 6.8-3.5 5.9-6.8-1.1-4.3-6-5.7-9.2-2.6l0 0z"></path>
+                                        <path class="fil0" d="M216.7 202.9c0 0.4-2.1 2.7-4.5 5.3l-4.3 4.8 2.1 2.2c1.1 1.2 5.4 5.9 9.6 10.4 4.1 4.5 8.1 8.8 8.8 9.6 0.8 0.9 1.6 1.2 2.3 0.9 1.2-0.5 12.1-12.6 12-13.4 0-0.3-4.6-4.2-10.3-8.5-14.9-11.4-15.4-11.8-15.6-11.2l0 0z"></path>
+                                        <path class="fil0" d="M69.6 212.7c-6.9 5.3-12.5 9.9-12.5 10.1 0 0.8 11.9 13.6 12.6 13.6 0.7 0 15.7-15.8 21.1-22.1 1.1-1.3 1.1-1.3-3.5-6.3-2.5-2.8-4.7-5-4.9-5-0.2 0-6 4.4-12.8 9.7z"></path>
+                                        <path class="fil0" d="M94.7 234.8c-4.7 7.2-8.6 13.3-8.7 13.7-0.1 0.4 1.4 1.6 3.2 2.8 4 2.4 13.2 7 13.4 6.7 0.1-0.1 2.9-6.4 6.2-14 3.3-7.6 6.2-14.3 6.5-14.8 0.5-0.8 0.1-1.2-2.2-2.2-1.5-0.7-4.2-2.2-6.1-3.3-1.9-1.1-3.5-2.1-3.6-2.1-0.1 0-4 5.9-8.7 13z"></path>
+                                        <path class="fil0" d="M190.9 224.7c-2.7 1.6-5.3 2.9-5.7 2.9-0.4 0-0.8 0.3-0.8 0.6 0 0.5 11.9 28.1 12.7 29.5 0.3 0.5 13.3-6.1 15.5-8l1.5-1.3-8.7-13.2c-4.8-7.2-8.9-13.2-9.2-13.3-0.2 0-2.7 1.2-5.5 2.8l0 0z"></path>
+                                        <path class="fil0" d="M125 248.5c-2.2 8.6-3.9 15.7-3.7 15.9 0.5 0.5 10.4 2.4 14.8 2.8l4.1 0.4 1.4-16c0.7-8.8 1.2-16.1 1-16.2-0.2-0.2-2.6-0.7-5.6-1.1-2.9-0.4-5.9-0.9-6.6-1.1-1.3-0.4-1.4-0.1-5.3 15.3l0 0z"></path>
+                                        <path class="fil0" d="M163.4 234.1c-3.3 0.6-6.1 1.2-6.3 1.2-0.1 0.1 2.5 30.9 2.6 32.1 0.2 0.6 17.8-2.2 18.7-3.1 0.3-0.3-1.9-9.8-5.8-24.7-1-3.8-2.1-6.8-2.5-6.8-0.4 0.1-3.4 0.6-6.8 1.2l0 0z"></path>
+                                        </svg>
+                                </div>
+                                
+                                <span>Live Casino</span>
+                            </span>
+                            <div role="dialog">
+                              <ol>
+                                <li>item 1.1</li>
+                                <li>item 1.2</li>
+                                <li>item 1.3</li>
+                              </ol>
+                            </div>
+                          </li>
+
+
+                          <li>
+                            <span role="button">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-icon slot-icon">
+                                        <path d="M502 109.5c6.7-4.7 10-11.3 10-20 0-7.3-2.5-13.5-7.5-18.5s-11-7.5-18-7.5 -13 2.5-18 7.5S461 82.2 461 89.5c0 8.7 3.3 15.3 10 20v159h-20v-194h-62v-21H265c-2.7-10-8.2-18.5-16.5-25.5S230.7 17.5 220 17.5 199.8 21 191.5 28 177.7 43.5 175 53.5H51v21H0v420h451v-144h30v-3c17.3-6.7 26-19.3 26-38 0-6.7-1.7-13-5-19V109.5zM164 115.5h123v143H164V115.5zM20 115.5h123v143H20V115.5zM389 442.5H51v-71h338V442.5zM430 258.5H307v-143h123V258.5z" class="a"></path>
+                                        <path d="M225 135.5c-13.3 0-27 3.3-41 10v-10h-10v62h10c0-0.7 0.2-1.5 0.5-2.5s0.8-2.7 1.5-5 1.7-4.5 3-6.5 3.3-3.7 6-5 6-2 10-2l14 0.5c9.3 0.3 15 0.2 17-0.5 -3.3 2-7.3 4.8-12 8.5 -4.7 3.7-10.8 10.8-18.5 21.5 -7.7 10.7-11.5 21.3-11.5 32h52c0-4.7 0.2-10.5 0.5-17.5s3.2-18.7 8.5-35 12.3-29.8 21-40.5l-10-10C252.7 142.2 239 142.2 225 135.5z" class="a"></path>
+                                        <path d="M331 184.5c4-5.3 9.7-8 17-8l14.5 0.5c9.7 0.3 15.2 0.2 16.5-0.5 -3.3 2-7.2 4.8-11.5 8.5 -4.3 3.7-10.3 10.8-18 21.5 -7.7 10.7-11.5 21.3-11.5 32h51c0-4.7 0.3-10.5 1-17.5s3.5-18.7 8.5-35 12.2-29.8 21.5-40.5l-10-10c-14 6.7-27.7 6.7-41 0 -14 0-27.7 3.3-41 10v-10h-11v62h11L331 184.5z" class="a"></path>
+                                        <path d="M82 135.5c-14 0-27.7 3.3-41 10v-10H31v62h10c0-2 0.2-4.2 0.5-6.5s2.2-5.3 5.5-9 8-5.5 14-5.5c0.7 0 5.7 0.2 15 0.5s14.7 0.2 16-0.5c-2.7 2-6.3 4.8-11 8.5 -4.7 3.7-10.8 10.8-18.5 21.5 -7.7 10.7-11.5 21.3-11.5 32h51c0-4.7 0.3-10.5 1-17.5s3.5-18.7 8.5-35 12.2-29.8 21.5-40.5l-10-10C109 142.2 95.3 142.2 82 135.5z" class="a"></path>
+                                    </svg>
+                                </div>
+                                
+                                <span>Slots</span>
+                            </span>
+                            <div role="dialog">
+                              <ol>
+                                <li>item 1.1</li>
+                                <li>item 1.2</li>
+                                <li>item 1.3</li>
+                              </ol>
+                            </div>
+                          </li>
+
+
+                          <li>
+                            <span role="button">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300.3" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision" class="svg-icon lotere-icon">
+                                        <path class="fil0" d="M75.2 150.1c0-41.4 33.6-75 75-75 41.4 0 75 33.6 75 75 0 41.4-33.6 75-75 75-41.4 0-75-33.6-75-75zm225 0c0-82.8-67.1-150-150-150-82.8 0-150 67.2-150 150 0 82.9 67.2 150 150 150 82.9 0 150-67.1 150-150z"></path>
+                                        <path class="fil1" d="M133.2 145.2c-5.1-2.2-8.9-5.2-11.2-9-2.4-3.8-3.5-8-3.5-12.6 0-7.8 2.7-14.2 8.2-19.3 5.4-5.1 13.2-7.6 23.1-7.6 9.9 0 17.6 2.6 23.1 7.6 5.5 5.1 8.2 11.5 8.2 19.3 0 4.8-1.3 9.1-3.8 12.9-2.5 3.8-6.1 6.7-10.6 8.7 5.8 2.3 10.2 5.7 13.3 10.2 3 4.5 4.5 9.7 4.5 15.5 0 9.7-3.1 17.5-9.2 23.6-6.1 6.1-14.3 9.1-24.5 9.1-9.5 0-17.4-2.5-23.7-7.5-7.4-5.9-11.2-14-11.2-24.3 0-5.7 1.4-10.9 4.2-15.6 2.8-4.7 7.2-8.4 13.2-11zm4.2-20.1c0 4 1.1 7.1 3.4 9.4 2.3 2.2 5.3 3.4 9 3.4 3.8 0 6.8-1.1 9.1-3.4 2.3-2.3 3.4-5.4 3.4-9.4 0-3.8-1.1-6.8-3.4-9-2.3-2.3-5.2-3.4-8.9-3.4-3.8 0-6.9 1.1-9.1 3.4-2.3 2.3-3.4 5.3-3.4 9.1zm-1.9 44.8c0 5.6 1.4 9.9 4.2 13 2.8 3.1 6.3 4.7 10.5 4.7 4.1 0 7.5-1.5 10.2-4.5 2.7-3 4-7.3 4-13 0-4.9-1.4-8.9-4.1-11.9-2.7-3-6.2-4.5-10.4-4.5-4.9 0-8.5 1.7-10.9 5.1-2.4 3.4-3.6 7.1-3.6 11.1z"></path>
+                                    </svg>
+                                </div>
+                                
+                                <span>Lotere</span>
+                            </span>
+                            <div role="dialog">
+                              <ol>
+                                <li>item 1.1</li>
+                                <li>item 1.2</li>
+                                <li>item 1.3</li>
+                              </ol>
+                            </div>
+                          </li>
+
+                          <li>
+                            <span role="button">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.9 25.9" class="svg-icon poker-icon">
+                                        <path d="M23.2 4.5l-4.7-1.2v2.1l4.2 1.1c0.5 0.1 0.9 0.7 0.7 1.2l-4.1 15.5c-0.1 0.5-0.7 0.9-1.2 0.7l-3.2-0.9C14.7 23 14.6 23 14.5 23h-7.1c0.2 0.1 0.3 0.1 0.5 0.2l9.7 2.6c1.6 0.4 3.2-0.5 3.7-2.1L25.3 8.2C25.7 6.5 24.8 4.9 23.2 4.5z" class="a"></path>
+                                        <path d="M14.5 0h-11c-1.7 0-3 1.3-3 3v16c0 1.7 1.3 3 3 3h11c1.7 0 3-1.3 3-3V3C17.5 1.3 16.1 0 14.5 0zM15.5 19c0 0.6-0.4 1-1 1h-11c-0.6 0-1-0.4-1-1V3c0-0.6 0.4-1 1-1h11c0.6 0 1 0.4 1 1V19zM13.3 11.4c0 1.4-0.9 2.3-2.3 2.3 -0.7 0-1.4-0.5-1.8-0.8 0 0 0.4 1.7 1 3 0.1 0.2-2.9 0.2-2.8 0 0.7-1.4 1-3 1-3 -0.4 0.4-1.1 0.9-1.8 0.9 -1.3 0-2.3-0.9-2.3-2.3C4.6 9.1 8.9 6.1 8.9 6.1h0C9 6.1 13.3 9.1 13.3 11.4zM13.4 3.1c0 0 0-0.1-0.1-0.1S13.3 3 13.2 3h-0.6c-0.1 0-0.1 0-0.1 0 0 0 0 0.1-0.1 0.1l-0.9 2.8C11.6 5.9 11.6 6 11.6 6S11.6 6 11.7 6h0.5c0 0 0.1 0 0.1 0 0 0 0 0 0.1-0.1l0.2-0.6h0.9l0.1 0.5c0 0 0 0.1 0 0.1C13.6 6 13.6 6 13.7 6h0.6c0 0 0.1 0 0.1 0s0 0 0-0.1L13.4 3.1zM12.6 4.8l0.1-0.5 0.1-0.5h0l0.1 0.6 0.1 0.5H12.6zM5.7 16c-0.1 0-0.1 0-0.1 0 0 0 0 0.1 0 0.1l-0.1 0.5H4.5l-0.2-0.6c0 0 0-0.1-0.1-0.1C4.2 16 4.2 16 4.2 16h-0.5c0 0-0.1 0-0.1 0s0 0 0 0.1l0.9 2.8c0 0 0 0.1 0.1 0.1C4.6 19 4.6 19 4.7 19H5.2c0.1 0 0.1 0 0.1 0 0 0 0-0.1 0.1-0.1l0.9-2.8c0 0 0-0.1 0-0.1S6.3 16 6.2 16H5.7zM5.1 17.7l-0.1 0.6H4.9l-0.1-0.5 -0.1-0.5H5.2L5.1 17.7z" class="a"></path>
+                                        <path d="M21.3 7.3c0 0 0-0.1 0-0.1 0 0-0.1-0.1-0.1-0.1l-0.5-0.1c-0.1 0-0.1 0-0.1 0 0 0-0.1 0-0.1 0.1l-1.6 2.4C18.9 9.5 18.9 9.5 18.9 9.5c0 0 0 0 0.1 0l0.5 0.1c0 0 0.1 0 0.1 0 0 0 0.1 0 0.1-0.1l0.3-0.5 0.9 0.2 0 0.6c0 0 0 0.1 0 0.1 0 0 0 0 0.1 0.1l0.5 0.1c0 0 0.1 0 0.1 0 0 0 0 0 0-0.1L21.3 7.3zM20.2 8.6l0.3-0.5 0.3-0.5 0 0 0 0.6 0 0.5L20.2 8.6z" class="a"></path>
+                                    </svg>
+                                </div>
+                                
+                                <span>Poker</span>
+                            </span>
+                            <div role="dialog">
+                              <ol>
+                                <li>item 1.1</li>
+                                <li>item 1.2</li>
+                                <li>item 1.3</li>
+                              </ol>
+                            </div>
+                          </li>
+
+                          <li>
+                            <span role="button">
+                                <div>
+                                    <i class="fa fa-gamepad"></i>
+                                </div>
+                                
+                                <span>Arcade</span>
+                            </span>
+                            <div role="dialog">
+                              <ol>
+                                <li>item 1.1</li>
+                                <li>item 1.2</li>
+                                <li>item 1.3</li>
+                              </ol>
+                            </div>
+                          </li>
+
+                          <li>
+                            <span role="button">
+                                <div>
+                                    <svg version="1" xmlns="http://www.w3.org/2000/svg" class="svg-icon" width="300" height="300" viewBox="0 0 225 225">
+                                        <path d="M29.8 2.2c-2 3.6-1.4 21.7 1.1 31.3 4.8 18.5 14.4 31.9 27 37.9 5.8 2.7 7.6 3.1 15.1 3 7.9-.1 11.2-.9 21.3-4.9 1.1-.4-5.2 6-14 14.2-22.8 21.7-40.6 40.9-48.7 52.6-3.8 5.5-3.8 5.5-2.6 11 5.5 26.7 40.5 58.6 78 71.1 13 4.3 28.7 6.7 30.1 4.5 1.8-2.9 12.9-38.1 12.9-41.2 0-.2-1.8-.7-4.1-1.1-18.5-3-28.4-20.4-21.8-38.2 2.1-5.7 11.6-16.9 18.3-21.7l3.1-2.2-2.3 3.2c-7.1 10-11.5 25.8-9.2 32.9 1.9 5.8 3.8 8.2 8.9 11.2 9.1 5.3 21.9 2.4 26.8-6.3 3.2-5.7 3-14.9-.7-29-1.5-6.1-2.6-11.2-2.4-11.4 1-1 14.7 1.9 19.7 4.2l5.4 2.5-.9-3.2c-1.8-5.6-8.2-13.9-14.7-18.9l-6.3-4.7 5.5-2.5c8.2-3.6 17.1-5.7 27.1-6.4l8.8-.6-4.1-4.6c-8-9.1-21.3-12-33.5-7.3-1.6.6-1.5.2.7-3.2 3.6-5.7 5-11 4.4-16.6-1.7-13.8-14.5-30-34.2-43.2-7.9-5.3-10.4-5.5-11.8-1.1-2.2 7-8.7 10-15.2 7-1.9-1-6.4-4.4-9.9-7.7-7.8-7.1-9.7-7.2-10.8-.8-.8 4.8-3.6 8-7 8-3.2 0-9.4-3.7-15.6-9.5C70.9 7.5 67.7 5 67 5c-.9 0-1 2.2-.5 8.9.6 8.2.5 9.1-1.4 11C59 31 50.8 25.2 36 4.6 34.1 2.1 32.3 0 31.9 0c-.5 0-1.4 1-2.1 2.2zM138 76.9c3.8 3.7 4.5 7 2.7 11.4-3.1 7.2-12.1 8.6-17.1 2.6-8.2-9.7 5.4-23 14.4-14z"></path>
+                                    </svg>
+                                </div>
+                                
+                                <span>Sabung Ayam</span>
+                            </span>
+                            <div role="dialog">
+                              <ol>
+                                <li>item 1.1</li>
+                                <li>item 1.2</li>
+                                <li>item 1.3</li>
+                              </ol>
+                            </div>
+                          </li>
+
+                          <li>
+                            <span role="button">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon promo-icon" width="47" height="47" viewBox="0 0 47.2 47.2">
+                                        <path d="M27.1 16.6c-0.3 0-0.5 0.1-0.7 0.4l-6.9 12.6c-0.1 0.2-0.1 0.5 0 0.7 0.1 0.2 0.4 0.4 0.6 0.4 0.3 0 0.5-0.1 0.6-0.4l6.9-12.6c0.1-0.2 0.1-0.5 0-0.7C27.6 16.7 27.3 16.6 27.1 16.6z"></path>
+                                        <path d="M22.5 20.5c0-2.3-1.3-4-3.6-4 -2.3 0-3.8 1.8-3.8 4.2 0 2.5 1.6 4.1 3.7 4.1C20.7 24.8 22.5 23.3 22.5 20.5zM18.8 23.1c-0.9 0-1.4-1-1.4-2.4 0-1.3 0.4-2.4 1.4-2.4 1 0 1.3 1.1 1.3 2.4C20.1 22.2 19.7 23.1 18.8 23.1z"></path>
+                                        <path d="M28.5 22.1c-2.3 0-3.8 1.8-3.8 4.2 0 2.5 1.6 4.1 3.7 4.1 2 0 3.7-1.5 3.7-4.3C32.2 23.8 30.9 22.1 28.5 22.1zM28.5 28.7c-0.9 0-1.4-1-1.4-2.4 0-1.3 0.4-2.4 1.4-2.4 1 0 1.3 1.1 1.3 2.4C29.8 27.8 29.4 28.7 28.5 28.7z"></path>
+                                        <path d="M43.8 17.1c-0.7-2.3 0.3-5.4-1.1-7.3 -1.4-1.9-4.7-1.9-6.6-3.3 -1.9-1.4-2.9-4.5-5.2-5.3 -2.2-0.7-4.9 1.2-7.3 1.2 -2.4 0-5.1-1.9-7.3-1.2 -2.3 0.7-3.3 3.9-5.2 5.3C9.2 7.8 5.9 7.8 4.5 9.7c-1.4 1.9-0.4 5.1-1.1 7.3C2.7 19.2 0 21.2 0 23.6s2.7 4.4 3.4 6.6c0.7 2.3-0.3 5.4 1.1 7.3 1.4 1.9 4.7 1.9 6.6 3.3 1.9 1.4 2.9 4.5 5.2 5.3 2.2 0.7 4.9-1.2 7.3-1.2 2.4 0 5.1 1.9 7.3 1.2 2.3-0.7 3.3-3.9 5.2-5.3 1.9-1.4 5.2-1.4 6.6-3.3 1.4-1.9 0.4-5.1 1.1-7.3 0.7-2.2 3.4-4.1 3.4-6.6C47.2 21.2 44.5 19.2 43.8 17.1zM23.6 40.3c-9.2 0-16.6-7.5-16.6-16.6 0-9.2 7.5-16.6 16.6-16.6 9.2 0 16.6 7.5 16.6 16.6C40.3 32.8 32.8 40.3 23.6 40.3z"></path>
+                                        <path d="M23.6 9.1c-8 0-14.5 6.5-14.5 14.5 0 8 6.5 14.5 14.5 14.5 8 0 14.5-6.5 14.5-14.5C38.1 15.6 31.6 9.1 23.6 9.1zM23.6 35.8c-6.7 0-12.1-5.5-12.1-12.1 0-6.7 5.5-12.1 12.2-12.1s12.2 5.5 12.2 12.1C35.8 30.3 30.3 35.8 23.6 35.8z"></path>
+                                    </svg>
+                                </div>
+                                
+                                <span>Promosi</span>
+                            </span>
+                            <div role="dialog">
+                              <ol>
+                                <li>item 1.1</li>
+                                <li>item 1.2</li>
+                                <li>item 1.3</li>
+                              </ol>
+                            </div>
+                          </li>
                       </ul>
                     </nav>
                   </amp-mega-menu>
-                <nav class="site-nav">
+                <!-- <nav class="site-nav">
                     <ul>
                         <li>
                             <div>
@@ -1145,7 +1401,7 @@
                             <span>Hot &amp; New</span>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
             </div>
              
             <amp-img src="./dpv1/m/images/indo_zO9BX6FY_20220926180219.jpg"
@@ -1156,16 +1412,16 @@
             </amp-img>
 
             <!--marquee-->
-            
             <div class="ann-wrapper">
                 <div class="clearfix pt-2">
-                    <div class="pull-left pointer">
-                        <div>
-                            <i class="icon-megaphone"></i>
-                        </div>
-                    </div>
-                    <div class="ann-content">
 
+                    <div class="ann-content">
+                        <div class="site-announcement">
+                            <span>
+                                <i class="fa fa-bullhorn"></i>
+                            </span>
+                            
+                        </div>
                         <div class="marquee" id="marquee">
                             <div>
                                 <span> Welcome to Depoi168.com ! Welcome to Depoi168.com</span>
@@ -1176,6 +1432,203 @@
                 </div>
             </div>
             <!--end of marquee-->
+
+            <div class="site-info">
+                <div>
+                    <amp-img src="./dpv1/images/progressive-jackpot-mh168.gif"
+                    width="640"
+                    height="114"
+                    layout="intrinsic"
+                    alt="">
+                    </amp-img>
+                    <div class="pj-txt">
+                        <span id="progressive_jackpot" data-value="13593886989.320045">IDR&nbsp;13,593,886,989.32</span>
+                        </div>
+                </div>
+                <div>
+                    <amp-img src="./dpv1/images/kzP3SI1.jpg"
+                    width="640"
+                    height="114"
+                    layout="intrinsic"
+                    alt="">
+    
+                    </amp-img>
+                </div>
+            </div>
+
+            <div class="col-sm-4" id="bankingops">
+                <h3>Bank Yang Didukung </h3>
+                <div class="box-wrap">
+                <div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 203px;"><ul class="box-slide" style="width: 2215%; position: relative; transition-duration: 0s; transform: translate3d(-720px, 0px, 0px);"><li style="float: left; list-style: none; position: relative; width: 360px;" class="bx-clone" aria-hidden="true">
+                <ul class="suppbanks box-list">
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_btpn">Jenius</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_cimb">CIMB Niaga</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_dmn">Sakuku / BLU</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_mdr">BANK MANDIRI</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_nobu">Bank Lainnya</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_ocbc">OVO</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_panin">Gopay</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_pmb">Dana</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_sumut">Link Aja</a>
+                </li>
+                </ul>
+                </li>
+                <li style="float: left; list-style: none; position: relative; width: 360px;" aria-hidden="true">
+                <ul class="suppbanks  box-list">
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bca">BANK BCA</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bkb">Shopeepay</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bmg">Bank Jago</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bms">Ewallet Lainnya &amp; Agen EDC</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bnc">Maybank</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bni">BANK BNI</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bpp">QRIS Barcode</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bri">BANK BRI</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bsi">BANK SYARIAH INDONESIA</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_btn">Bank BTN</a>
+                </li>
+                </ul>
+                </li>
+                <li style="float: left; list-style: none; position: relative; width: 360px;" aria-hidden="false">
+                <ul class="suppbanks box-list">
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_btpn">Jenius</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_cimb">CIMB Niaga</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_dmn">Sakuku / BLU</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_mdr">BANK MANDIRI</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_nobu">Bank Lainnya</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_ocbc">OVO</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_panin">Gopay</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_pmb">Dana</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_sumut">Link Aja</a>
+                </li>
+                </ul>
+                </li>
+                <li style="float: left; list-style: none; position: relative; width: 360px;" class="bx-clone" aria-hidden="true">
+                <ul class="suppbanks  box-list">
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bca">BANK BCA</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bkb">Shopeepay</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bmg">Bank Jago</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bms">Ewallet Lainnya &amp; Agen EDC</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bnc">Maybank</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bni">BANK BNI</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bpp">QRIS Barcode</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bri">BANK BRI</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_bsi">BANK SYARIAH INDONESIA</a>
+                </li>
+                <li>
+                <span class="signal green" title="Online">signal</span>
+                <a class="bk_idr_btn">Bank BTN</a>
+                </li>
+                </ul>
+                </li></ul></div><div class="bx-controls bx-has-pager"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link active">2</a></div></div></div></div>
+                </div>
+                </div>
         </div>
     </body>
 </html>
