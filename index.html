@@ -499,6 +499,8 @@
                 color:rgb(236, 203, 91);
             }
         }
+
+
         .top-head{
             display: flex;
             justify-content: space-between;
@@ -508,12 +510,34 @@
         amp-mega-menu .login-desktop {
             background-color: transparent;
         }
+
+        .btn-primary {
+            background: linear-gradient(180deg, #0091EC 0%, #027ECB 100%);
+            color: #fff;
+            padding-bottom: 45px;
+            border: none;
+            margin-right: 5px;
+        }
+        .btn-danger{
+            background-image: linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);
+            color: #fff;
+            border: none;
+        }
+
+        .login-btn.btn, .btn-danger{
+            width: 100px;
+            padding: 4px 12px;
+
+        }
+        
         .t-buttons i{
             color: #eccb5b;
         }
+
         .t-buttons a{
             color: #fff;
         }
+        
         .separator-2{
             margin: 0 10px;
             display: inline-block;
@@ -609,6 +633,11 @@
         }
         .footer-mid{
             border-bottom: 1px dashed #323232;
+            margin-bottom: 30px;
+        }
+
+        .provider-list{
+            padding-bottom: 30px;
         }
         @keyframes  marquee {
             0% {
@@ -687,6 +716,23 @@
             background: #878787;
             color: #161616;
             line-height: 1.2;
+        }
+
+        .sprite {
+            background: url('./images/provider-v3.png') no-repeat -54px -38px;
+            width: 499px;
+            height: 37px;
+        }
+
+        .maha-prod ul {
+            border-top: 1px solid #878787;
+        }
+
+        .maha-prod ul {
+            padding: 12px 10px;
+            margin: 0;
+            border-top: 1px solid #878787;
+            list-style: none;
         }
    </style>
 </head>
@@ -1183,7 +1229,7 @@
                             <nav class="login-desktop">
                             <ul>
                                 <li>
-                                <span role="button">LOGIN</span>
+                                <button class="login-btn btn btn-primary" role="button">LOGIN <i class="fa fa-angle-down"></i></button>
                                 <div role="dialog">
                                     <h1>Test</h1>
                                 </div>
@@ -1191,7 +1237,7 @@
                             </ul>
                             </nav>
                         </amp-mega-menu>
-                        <a href="" class="open-new-window" rel="nofollow">DAFTAR</a>
+                        <a href="" class="btn-danger" rel="nofollow">DAFTAR</a>
                     </div>
                 </div>
             </div>
@@ -1541,15 +1587,19 @@
                     </div>
                     <div class="footer-mid"></div>
                     <h4>Powered By</h4>
+                    <br>
+                    <br>
                     <div class="provider-list">
                         <div class="maha-prod">
                             <span class="maha-prod-title">SPORTS</span>
-                            <amp-img src="./images/1.jpg"
-                                width="640"
-                                height="114"
-                                layout="intrinsic"
-                                alt="">
-                            </amp-img>
+                            <ul>
+                                <li><amp-img src="./images/provider-v3.png"
+                                  width="103"
+                                  height="23"
+                                  layout="responsive"
+                                  alt="" class="sprite">
+                                </amp-img></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
