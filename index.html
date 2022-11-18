@@ -718,9 +718,12 @@
             background: #878787;
             color: #161616;
             line-height: 1.2;
+            z-index: 999;
         }
         
-
+        .maha-prod{
+            width: 100%;
+        }
         .maha-prod ul {
             display: flex;
             align-items: center;
@@ -728,11 +731,12 @@
         }
 
         .maha-prod ul {
-            padding: 12px 10px;
+            padding: 15px 5px;
             margin: 0;
             border-top: 1px solid #878787;
             list-style: none;
         }
+
         .maha-prod .block-container{
             border-top: none;
         }
@@ -931,6 +935,49 @@
             background-position: -773px -336px;
             width: 57px;
             height: 31px;
+        }
+    
+        .metode-pembayaran, .follow-us{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+        }
+        .metode-pembayaran ul, .follow-us ul{
+            display: flex;
+        }
+        .metode-pembayaran ul:last-child{
+            text-align: right;
+        }
+        .follow-us ul li{
+            padding-right: 10px;
+        }
+        .metode-pembayaran span, .follow-us span{
+            font-size: 14px;
+            color: rgb(135, 135, 135);
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+        .metode-pembayaran ul, .follow-us ul{
+            list-style: none;
+        }
+        .follow-us span i:first-child{
+            background-color: #245580;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 8px 5px 5px 13px;
+            font-size: 22px;
+            color: hsl(0, 0%, 100%);
+        }
+        .follow-us span i.fa-twitter{
+            background-color: rgb(64, 153, 255);
+            padding: 8px 5px 5px 11px;
+        }
+        .follow-us span i.fa-youtube-play{
+            background-color: transparent;
+
+            border: 1px solid #fff;
+            padding: 8px 11px 5px 9px;
         }
    </style>
 </head>
@@ -1884,14 +1931,13 @@
                                 <li>
                                     <span class="img-sprite habanero"></span>
                                 </li>
-                             
+                                <li>
+                                    <span class="img-sprite microgaming"></span>
+                                </li>
                             </ul>
 
 
                             <ul class="block-container">
-                                <li>
-                                    <span class="img-sprite microgaming"></span>
-                                </li>
                                 <li>
                                     <span class="img-sprite joker"></span>
                                 </li> 
@@ -1973,6 +2019,145 @@
                                     <span class="img-sprite sabung"></span> 
                                 </li>
                             </ul>
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div class="footer-mid"></div>
+
+                        <div class="metode-pembayaran">
+                            <div>
+                                <span>Metode pembayaran</span>
+                                <ul>
+                                    <li>
+                                        <amp-img src="./images/local-bank-icon.png"
+                                          width="180"
+                                          height="56"
+                                          layout="fixed"
+                                          alt="">
+                                        </amp-img>
+                                    </li>
+                                    <li>
+                                        <amp-img src="./images/e-wallet-icon.png"
+                                          width="180"
+                                          height="56"
+                                          layout="fixed"
+                                          alt="">
+                                        </amp-img>
+                                    </li>
+                                    <li>
+                                        <amp-img src="./images/crypto-icon.png"
+                                        width="180"
+                                        height="56"
+                                        layout="fixed"
+                                        alt="">
+                                      </amp-img>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>Responsible Gaming</span>
+                                <ul>
+                                    <li>
+                                        <amp-img src="./images/responsible-gamcare.png"
+                                        width="45"
+                                        height="56"
+                                        layout="fixed"
+                                        alt="">
+                                      </amp-img>
+                                    </li>
+                                    <li>
+                                        <amp-img src="./images/18.png"
+                                        width="56"
+                                        height="56"
+                                        layout="fixed"
+                                        alt="">
+                                      </amp-img>
+                                    </li>
+                                    <li>
+                                        <amp-img src="./images/rga (1).png"
+                                        width="170"
+                                        height="56"
+                                        layout="fixed"
+                                        alt="">
+                                      </amp-img>
+                                    </li>
+                                    <li>
+                                        <amp-img src="./images/IOM.png"
+                                        width="56"
+                                        height="56"
+                                        layout="fixed"
+                                        alt="">
+                                      </amp-img>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="footer-mid"></div>
+
+                        <div class="follow-us">
+                            <div>
+                                <span>Follow Us</span>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                                                <i class="fa fa-facebook"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                                                <i class="fa fa-twitter"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                                                <i class="fa fa-youtube-play"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span>Browser Yang Disarankan</span>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <amp-img src="./images/google-chrome.png"
+                                            width="45"
+                                            height="45"
+                                            layout="fixed"
+                                            alt="">
+                                            </amp-img>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <amp-img src="./images/mozilla-firefox.png"
+                                            width="45"
+                                            height="45"
+                                            layout="fixed"
+                                            alt="">
+                                            </amp-img>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <amp-img src="./images/ie-logo.png"
+                                            width="45"
+                                            height="45"
+                                            layout="fixed"
+                                            alt="">
+                                        </amp-img>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
