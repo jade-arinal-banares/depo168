@@ -16,9 +16,9 @@
   <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
   <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-  <!-- <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async></script> -->
   <script custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js" async></script>
   <script async custom-element="amp-date-display" src="https://cdn.ampproject.org/v0/amp-date-display-0.1.js"></script>
+  <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async></script>
 
   <title>DEPO168</title>
 
@@ -506,9 +506,13 @@
         .top-head{
             display: flex;
             justify-content: space-between;
-            padding: 10px 30px 0 30px;
+            padding: 10px 0 0 0;
+        }
+
+        .tophead{
             background: rgb(0 0 0 / 40%);
         }
+        
         amp-mega-menu .login-desktop {
             background-color: transparent;
         }
@@ -516,7 +520,7 @@
         .btn-primary {
             background: linear-gradient(180deg, #0091EC 0%, #027ECB 100%);
             color: #fff;
-            padding-bottom: 45px;
+
             border: none;
             margin-right: 5px;
         }
@@ -550,12 +554,10 @@
             box-shadow: 1px 0px 0px 0px #212121;
             vertical-align: middle;
         }
-        .site-header{
+        .site-header, .customer-service{
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-      
         }
         .site-nav li{
             list-style: none;
@@ -586,11 +588,11 @@
         .site-nav ul {
             display: flex;
             color: white;
-            padding: 10px 0 30px 30px
+            padding: 10px 0 0 0
         }
 
         .site-nav{
-            padding-top: 20px;
+            padding-top: 5px;
             background-color: transparent;
         }
        
@@ -651,6 +653,154 @@
             }
         }
 
+        .customer-service{
+            margin-bottom: 40px;
+            background: rgb(0 0 0 / 40%);
+        }
+        .customer-service h3{
+            color:rgb(236, 203, 91);
+            padding: 10px
+        }
+        .services-section{
+            width: 33.33333%;
+        }
+        .services-section:nth-child(2), .services-section:first-child{
+            border-right: 2px solid #4b4b4b;
+        }
+        .services{
+            display: flex; justify-content: space-between; padding: 30px 55px
+        }
+        .services li{
+            padding-bottom: 30px;
+        }
+     
+        .amp-carousel-button{
+            background-color: transparent;
+            background-position: 0;
+        }
+        .amp-carousel-button-prev{
+            padding: 5px;
+        }
+       
+
+        .cs {
+            filter: sepia(100%);
+            display: block;
+            background: url('./images/idr_sprite.png');
+        }
+        .cs:hover{
+            filter: sepia(1%);
+        }
+        
+        .btpn{
+            background-position: -11px -979px;
+            width: 94px;
+            height: 25px;
+            color: #027ECB;
+        }
+
+        .bca {
+            background-position: -21px -14px;
+            width: 79px;
+            height: 31px;
+        }
+        .cimb{
+            background-position: -4px -382px;
+            width: 113px;
+            height: 15px;
+        }
+        .danamon{
+            background-position: -4px -200px;
+            width: 114px;
+            height: 16px;
+        }
+
+        .mandiri{
+            background-position: -13px -260px;
+            width: 93px;
+            height: 17px;
+        }
+        
+        .nobu{
+            background-position: -16px -618px;
+            width: 92px;
+            height: 24px;
+        }
+
+        .qcbc{
+            background-position: -37px -559px;
+            width: 45px;
+            height: 21px;
+        }
+        .panin{
+            background-position: -20px -441px;
+            width: 79px;
+            height: 18px;
+        }
+
+        .permata {
+            background-position: -28px -503px;
+            width: 59px;
+            height: 16px;
+        }
+
+        .sumut{
+            background-position: -13px -319px;
+            width: 103px;
+            height: 20px;
+        }
+
+        .bca{
+            background-position: -21px -14px;
+            width: 79px;
+            height: 31px;
+        }
+        .kalbar{
+            background-position: -26px -802px;
+            width: 65px;
+            height: 15px;
+        }
+        .mega{
+            background-position: -26px -860px;
+            width: 68px;
+            height: 21px;
+        }
+        .syariah{
+            background-position: -13px -673px;
+            width: 95px;
+            height: 30px;
+        }
+        .bnc{
+            background-position: -22px -1094px;
+            width: 77px;
+            height: 27px;
+        }
+        .bni{
+            background-position: -24px -76px;
+            width: 68px;
+            height: 28px;
+        }
+        .papua{
+            background-position: -17px -741px;
+            width: 84px;
+            height: 19px;
+        }
+        .bri{
+            background-position: -24px -137px;
+            width: 63px;
+            height: 29px;
+        }
+        .bsi{
+            background-position: -29px -1033px;
+            width: 60px;
+            height: 28px;
+        }
+        .btn{
+            background-position: -25px -917px;
+            width: 69px;
+            height: 25px;
+        }
+
         .site-info{
             display: flex;
             padding: 10px 0 10px 0;
@@ -679,7 +829,7 @@
             height: 300px;
         }
         footer{
-            background-color: #222222;
+            background-color: rgb(22, 22, 22);
             height: auto;
         }
         .footer-top{
@@ -699,6 +849,17 @@
         .footer-top, .footer-links{
             display: flex;
             justify-content: space-between;
+        }
+
+
+        .footer-links li:after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            background: #66592a;
+            vertical-align: middle;
+            margin: 0 10px;
         }
 
         .maha-prod .maha-prod-title {
@@ -1450,6 +1611,7 @@
 
         <!-- Desktop -->
         <div class="desktop-ver">
+            <div class="tophead">
             <div class="container">
                 <div class="top-head">
                     <div class="date-screen fl">
@@ -1488,7 +1650,10 @@
                         <a href="" class="btn-danger" rel="nofollow">DAFTAR</a>
                     </div>
                 </div>
+                
             </div>
+        </div>
+
             <div class="container">
 
             
@@ -1500,7 +1665,7 @@
                     alt="">
                 </amp-img>
 
-                <amp-mega-menu height="130" layout="fixed-height">
+                <amp-mega-menu height="90" layout="fixed-height">
                     <nav class="site-nav">
                       <ul>
                         <li>
@@ -1819,6 +1984,157 @@
             </div>
              <!-- end of progressive jackpot -->
 
+            <!-- Customer Service -->
+            <section class="container">
+                <div class="customer-service">
+                    <div class="services-section">
+                        <h3>Bank Yang Didukung</h3>
+                        <!-- Carousel Mobile  -->
+                        <amp-carousel type="slides" width="400" height="275" controls loop autoplay delay="3000" layout="responsive"  data-next-button-aria-label="Go to next slide" data-previous-button-aria-label="Go to previous slide" role="region"
+                        aria-label="Looping carousel">
+                        
+                        <div class="services">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <span class="cs btpn"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs cimb"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs danamon"></span>
+                                    </li>
+                                     <li>
+                                        <span class="cs mandiri"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs nobu"></span>
+                                    </li>
+                                </ul>
+                               
+                            </div>
+                           <div>
+                                <ul>
+                                    <li>
+                                        <span class="cs qcbc"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs panin"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs permata"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs sumut"></span>
+                                    </li>
+                                </ul>
+                           </div>
+                        </div>
+                        <div class="services">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <span class="cs bca"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs kalbar"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs mega"></span>
+                                    </li>
+                                     <li>
+                                        <span class="cs syariah"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs bnc"></span>
+                                    </li>
+                                </ul>
+                               
+                            </div>
+                           <div>
+                                <ul>
+                                    <li>
+                                        <span class="cs bni"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs papua"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs bri"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs bsi"></span>
+                                    </li>
+                                    <li>
+                                        <span class="cs btn"></span>
+                                    </li>
+                                </ul>
+                           </div>
+                        </div>
+                        </amp-carousel>
+                    </div>
+                    <div class="services-section">
+                        <h3>Customer Service</h3>
+                        <!-- Carousel Mobile  -->
+                        <amp-carousel type="slides" width="400" height="275" controls loop autoplay delay="3000" layout="responsive"  data-next-button-aria-label="Go to next slide" data-previous-button-aria-label="Go to previous slide" role="region"
+                        aria-label="Looping carousel">
+                        
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <span class="cs bca"></span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Haha</li>
+                                </ul>
+                            </div>
+                           <div>
+                                <ul>
+                                    <li>Hahaaha</li>
+                                </ul>
+                           </div>
+                        </div>
+                        <div>
+                            test
+                        </div>
+                        </amp-carousel>
+                    </div>
+                    <div class="services-section">
+                        <h3>Kecepatan Transaksi</h3>
+                        <!-- Carousel Mobile  -->
+                        <amp-carousel type="slides" width="400" height="275" controls loop autoplay delay="3000" layout="responsive"  data-next-button-aria-label="Go to next slide" data-previous-button-aria-label="Go to previous slide" role="region"
+                        aria-label="Looping carousel">
+                        
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <span class="cs bca"></span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Haha</li>
+                                </ul>
+                            </div>
+                           <div>
+                                <ul>
+                                    <li>Hahaaha</li>
+                                </ul>
+                           </div>
+                        </div>
+                        <div>
+                            test
+                        </div>
+                        </amp-carousel>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Customer Service -->
+
+
             <!-- Footer -->
             <footer>
                 <div class="container">
@@ -2101,21 +2417,21 @@
                                 <span>Follow Us</span>
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.facebook.com/Depobola.official">
                                             <span>
                                                 <i class="fa fa-facebook"></i>
                                             </span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://twitter.com/depo168" target="_blank">
                                             <span>
                                                 <i class="fa fa-twitter"></i>
                                             </span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://test.depo168.net/">
                                             <span>
                                                 <i class="fa fa-youtube-play"></i>
                                             </span>
