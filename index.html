@@ -641,7 +641,7 @@
         }
 
         .customer-service{
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             background: rgb(0 0 0 / 40%);
         }
         .customer-service h3{
@@ -674,8 +674,17 @@
             padding: 15px 15px 0 15px;
             justify-content: space-between;
         }
-       
-      
+        .transaction h2{
+            font-size: 19px;
+            font-weight: 400;
+        }
+        .transaction p{
+            padding-left: 8px;
+            color:rgb(236, 203, 91);
+        }
+        .transaction .min{
+            font-size: 28px;
+        }
         .cs-content li div:first-child{
             padding-right: 30px;
             font-size: 35px;
@@ -713,6 +722,7 @@
         .referensi p{
             font-size: 12px;
             padding: 0 10px 10px 10px;
+            color: #aeb6bb;
         } 
         .dw-pg-inner{
             position: absolute;
@@ -734,7 +744,7 @@
 
         .site-info{
             display: flex;
-            padding: 10px 0 10px 0;
+            padding: 5px 0 10px 0;
         }
 
         .pj-txt {
@@ -1853,21 +1863,24 @@
         
 
             <!-- Carousel Desktop -->
-            <amp-carousel type="slides" width="885" height="300" controls loop autoplay delay="3000" layout="responsive"  data-next-button-aria-label="Go to next slide" data-previous-button-aria-label="Go to previous slide" role="region"
+            <amp-carousel type="slides" width="885" height="200" controls loop autoplay delay="3000" layout="responsive"  data-next-button-aria-label="Go to next slide" data-previous-button-aria-label="Go to previous slide" role="region"
             aria-label="Looping carousel">
+            <a href="/">
                 <amp-img src="./dpv1/m/images/indo_zO9BX6FY_20220926180219.jpg"
                     width="1385"
                     height="340"
-                    layout="intrinsic"
+                    layout="responsive"
                     alt="">
                 </amp-img>
+            </a>
+            <a href="/">
                 <amp-img src="./dpv1/m/images/indo_zO9BX6FY_20220926180219.jpg"
                     width="1385"
                     height="340"
-                    layout="intrinsic"
+                    layout="responsive"
                     alt="">
                 </amp-img>
-                
+            </a>
             </amp-carousel>
            
 
@@ -2085,6 +2098,8 @@
                         </amp-carousel>
                     </div>
                     <div class="services-section transaksi">
+                        <br>
+                        <br>
                         <h3>Kecepatan Transaksi</h3>
                         <div class="transaction">
                             <div>
@@ -2092,7 +2107,7 @@
                                 <p>Waktu Rata-rata</p>
                             </div>
                             <div style="display: flex; align-items: center;">
-                                <h2>2</h2>
+                                <h2 class="min">2</h2>
                                 <p>Mins</p>
                             </div>
                         </div>
@@ -2105,13 +2120,14 @@
                                 <p>Waktu Rata-rata</p>
                             </div>
                             <div style="display: flex; align-items: center;">
-                                <h2>5</h2>
+                                <h2 class="min">5</h2>
                                 <p>Mins</p>
                             </div>
                         </div>
                         <div class="dw-pg-bar">
                             <div class="dw-pg-inner" style="width:230px;"></div>
                         </div>
+                        <br>
                         <div class="referensi">
                             <p>* Referensi Waktu Rata-rata tidak berlaku jika bank Offline,</p>
                             <p>gangguan koneksi dan informasi yang disediakan tidak lengkap</p>
