@@ -947,9 +947,15 @@
             text-decoration: none;
             display: block;
         }
+        
 
         .dropdown-content a:hover {background-color: #ddd;}
-        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropdown-content {
+            display: flex;
+     
+            width: 100%;
+            left: 0;
+        }
         .dropdown:hover .dropbtn {color: #eccb5b;transition: 1s;}
         
         .game-icon svg, .game-icon i{
@@ -1493,11 +1499,6 @@
                             <br/>
                             <span>HOME</span>
                         </button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
                       </div>
                     <div class="dropdown">
                         <button class="dropbtn game-icon"> 
@@ -1510,9 +1511,70 @@
                             <span>Hot &amp; New</span>
                         </button>
                         <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
+                          <a href="#">
+                            <amp-img src="./images/gates-of-olympus-thumb_v3.jpg"
+                                width="110"
+                                height="110"
+                                layout="fixed"
+                                alt="">
+                            </amp-img>
+                          </a>
+                          <a href="#">
+                            <amp-img src="./images/starligh-princess-thumb_v2.jpg"
+                                width="110"
+                                height="110"
+                                layout="fixed"
+                                alt="">
+                            </amp-img>
+                          </a>
+                          <a href="#">
+                            <amp-img src="./images/sweet-bonanza-thumb_v3.jpg"
+                                width="110"
+                                height="110"
+                                layout="fixed"
+                                alt="">
+                            </amp-img>
+                          </a>
+                          <a href="#">
+                            <amp-img src="./images/sweet-bonanza-thumb_v3.jpg"
+                                width="110"
+                                height="110"
+                                layout="fixed"
+                                alt="">
+                            </amp-img>
+                          </a>
+                           <a href="#">
+                            <amp-img src="./images/aztec-gems-thumb_v3.jpg"
+                                width="110"
+                                height="110"
+                                layout="fixed"
+                                alt="">
+                            </amp-img>
+                          </a>
+                            <a href="#">
+                            <amp-img src="./images/sugar-rush-hot-thumb.jpg"
+                                width="110"
+                                height="110"
+                                layout="fixed"
+                                alt="">
+                            </amp-img>
+                          </a>
+                            <a href="#">
+                            <amp-img src="./images/mw2-thumb.jpg"
+                                width="110"
+                                height="110"
+                                layout="fixed"
+                                alt="">
+                            </amp-img>
+                          </a>
+                          <a href="#">
+                            <amp-img src="./images/royale-house-thumb.jpg"
+                                width="110"
+                                height="110"
+                                layout="fixed"
+                                alt="">
+                            </amp-img>
+                          </a>
                         </div>
                       </div>
                       <div class="dropdown">
