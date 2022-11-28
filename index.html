@@ -317,17 +317,22 @@
                 background-image: linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);
                 color: #fff;
                 border: none;
-                margin-bottom: 5px;
+ 
+                font-size: 14px
             }
 
-            .login-btn.btn, .btn-danger{
+             .btn-danger{
+                width: 80px;
+                padding: 7px 12px;
+            }
+            .login-btn.btn{
                 width: 100px;
-                padding: 4px 12px;
-
+                padding: 0 12px;
             }
             
             .t-buttons i{
                 color: #eccb5b;
+                padding-top: 5px
             }
 
             .t-buttons a{
@@ -717,19 +722,50 @@
                 background-color: lightgray;
             }
             amp-mega-menu .menu-item[open] > div {
-                width: 100%;
+                width: 220px;
+                padding: 10px;
+                left: 0;
+                font-size: 10px;
+                text-transform: uppercase;
+                background-color: #161616;
+            }
+            amp-mega-menu button.masuk {
+                width: 200px;
             }
             .desktop-log {
                 background-color: rgb(22, 22, 22);
                 z-index: 9999;
-            
             }
-            
+            .desktop-log  input {
+                background-color: #505050;
+                border-color: #707070;
+                color: #fff;
+                padding: 5px 10px;
+                margin-top: 5px;
+                
+            }
+            .desktop-log  input:last-child{
+                margin-bottom: 10px;
+            }
+
+            .desktop-log div label{
+                font-size: 10px;
+                color: #707070;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
             .desktop-log h3{
                 color:rgb(236, 203, 91);
+                font-weight: 500;
+                padding-bottom: 20px;
+                padding-top: 20px;
             }
             .desktop-log a{
-                color:hsl(0, 0%, 100%)
+                color:hsl(0, 0%, 100%);
+                font-size: 11px;
+            }
+            .desktop-log a:last-child{
+                color:rgb(236, 203, 91)
             }
             .dropbtn {
                 background-color: transparent;
@@ -737,7 +773,7 @@
                 padding: 0 8px;
                 font-size: 12px;
                 border: none;
-            text-transform: capitalize;
+                text-transform: capitalize;
                 cursor: pointer;
             }
 
@@ -797,8 +833,7 @@
             .game-icon svg, .game-icon i{
                 font-size: 30px
             }
-
-
+          
             @media (max-width: 768px) {
             
             .form-control {
@@ -1398,28 +1433,24 @@
                                                     <label for="username">Username</label>
                                                     <div class="flex input-container">
                                                         <div>
-                                                            <i class="fa fa-user"></i>
-                                                        </div>
-                                                        <div>
-                                                            <input type="text" name="fr_username" id="fr_username">
+                                                            <input type="text" placeholder="Username" name="fr_username" id="fr_username">
                                                         </div>
                                                     </div>
                                                     <label for="username">Password</label>
                                                     <div class="flex input-container">
                                                         <div>
-                                                            <i class="fa fa-lock"></i>
-                                                        </div>
-                                                        <div>
-                                                            <input type="password" name="fr_password" id="fr_password">
+                                                            <input type="password" placeholder="Password" name="fr_password" id="fr_password">
                                                         </div>
                                                     </div>
+                                                    <br>
                                                     <div>
-                                                        <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+                                                        <button type="submit" class="btn btn-primary masuk">Masuk</button>
                                                     </div>
+                                                    <br>
                                                     <div>
-                                                        <a href="#">LUPA PASSWORD</a>
+                                                        <a href="https://test.depo168.net/lupapassword.html" target="_blank">LUPA PASSWORD</a>
                                                         <br>
-                                                        <a href="#">BELUM MEMPUNYA AKUN? </a> KLIK DISINI
+                                                        BELUM MEMPUNYA AKUN? <a href="https://test.depo168.net/register.html" target="_blank">KLIK DISINI</a>
                                                     </div>
                                                     <!-- For input validation if success or commiting an error -->
                                                     <!-- <div submit-success>
@@ -1433,6 +1464,7 @@
                                                                         </template>
                                                                     </div> -->
                                                 </div>
+                                            </form>
                                         </div>
                                     </li>
                                 </ul>
