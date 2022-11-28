@@ -833,7 +833,104 @@
             }
           
             @media (max-width: 768px) {
+                /* .amp-sidebar-mask{
+                    background-color: transparent;
+                }
+                .top-nav{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    z-index: 800;
+                    background-image: url(./images/bg.jpg);
+                    background-repeat: repeat;
+                    background-size: 400px 218px;
+                    background-position: center center;
+
+                }
+
+            amp-carousel{
+                margin-top: 75px;
+            } */
+
+            ul.mobile-slot{
+                display: flex;
+                list-style: none;
+            }
+            ul.mobile-slot li{
+                width: 25%;
+                margin-right: 5px;
+                background-color: rgb(0 0 0 / 40%);
+                display: inline;
+
+            }
+            .dropbtn {
+                background-color: transparent;
+
+                font-size: 12px;
+                border: none;
+                text-transform: capitalize;
+                cursor: pointer;
+                border-radius: 3px;
+                color: #e5f2ff;
+                position: relative;
+         
+            }
+    
+            .dropdown {
+                display: inline-block;
+
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: rgb(34, 34, 34);
+                width: auto;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 999; 
+                border-bottom: 24px solid rgb(22, 22, 22);
+            }
+            .dropdown-content li div{
+                color:hsl(0, 0%, 100%);
+                font-size: 12px;
+                text-transform: uppercase;
+                padding-top: 5px;
+                text-align: center;
+                white-space: nowrap;
+                width: 100%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        
+            .dropbtn svg, .dropbtn i{
+                margin-bottom: 10px;
+            }
             
+            .dropdown-content button {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            
+            .dropdown-content ul{
+                display: block;
+            }
+            .dropdown-content ul li{
+                display: flex;
+
+            }
+            
+
+            .dropdown-content a:hover {background-color: #eccb5b}
+            .dropdown:hover .dropdown-content {
+                display: flex;
+                width: 100%;
+                left: 0;
+            }
+            .dropdown:hover .dropbtn {color: #eccb5b;transition: 1s;}
+
             .form-control {
                 position: relative;
                 float: left;
@@ -955,12 +1052,6 @@
                 box-shadow: 0px 3px 15px 0px rgb(0 0 0 / 63%);
             } */
 
-            amp-mega-menu .game-menu-item[open] > div {
-                width: auto;
-                background-color: white;
-                z-index: 999;
-            }
-            
             .box-three {
                 padding: 0;
                 color: #eccb5b;
@@ -1151,7 +1242,163 @@
             </amp-img>
         </div>
 
-        <amp-mega-menu height="160" layout="fixed-height">
+
+        <div class="container">
+            <nav>
+                <ul class="mobile-slot">
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn game-icon" href="https://test.depo168.net/judi-bola.html"> 
+                                        <i class="fa fa-futbol-o"></i>
+                                        <br/>
+                                        <span>SPORTS</span>
+                            </button>
+                            <div class="dropdown-content">
+            
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/i-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>Ibobet</div>
+                                            </a>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/c-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>Cmd368</div>
+                                            </a>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/sbo-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>Sbobet</div>
+                                            </a>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/t-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>BTI</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+            
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn game-icon" href="https://test.depo168.net/judi-bola.html"> 
+                                        <i class="fa fa-futbol-o"></i>
+                                        <br/>
+                                        <span>SPORTS</span>
+                            </button>
+                            <div class="dropdown-content">
+                        
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/i-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>Ibobet</div>
+                                            </a>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/c-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>Cmd368</div>
+                                            </a>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/sbo-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>Sbobet</div>
+                                            </a>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/t-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>BTI</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+           
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn game-icon" href="https://test.depo168.net/judi-bola.html"> 
+                                        <i class="fa fa-futbol-o"></i>
+                                        <br/>
+                                        <span>SPORTS</span>
+                            </button>
+                            <div class="dropdown-content">
+                    
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/i-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>Ibobet</div>
+                                            </a>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/c-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>Cmd368</div>
+                                            </a>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/sbo-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>Sbobet</div>
+                                            </a>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/t-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>BTI</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                      
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn game-icon" href="https://test.depo168.net/judi-bola.html"> 
+                                        <i class="fa fa-futbol-o"></i>
+                                        <br/>
+                                        <span>SPORTS</span>
+                            </button>
+                            <div class="dropdown-content">
+                    
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/i-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>Ibobet</div>
+                                            </a>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/c-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>Cmd368</div>
+                                            </a>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/sbo-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>Sbobet</div>
+                                            </a>
+                                            <a href="#">
+                                                <amp-img src="./images/menu-thumb/sports/t-sports-thumb_v2.png" width="110" height="110" layout="fixed" alt="">
+                                                </amp-img>
+                                                <div>BTI</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                        
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+                
+        <!-- <amp-mega-menu height="160" layout="fixed-height">
             <nav>
                 <ul class="games-menu">
                     <li class="game-menu-item">
@@ -1319,7 +1566,7 @@
 
                 </ul>
             </nav>
-        </amp-mega-menu>
+        </amp-mega-menu> -->
 
         <div class="box-three">
             <div class="container">
