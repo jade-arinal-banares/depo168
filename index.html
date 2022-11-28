@@ -272,12 +272,7 @@
 
                 }
                 .btn-primary{
-                    background-image: -webkit-linear-gradient(top,#337ab7 0,#265a88 100%);
-                    background-image: -o-linear-gradient(top,#337ab7 0,#265a88 100%);
-                    background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#265a88));
-                    background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
-                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff265a88', GradientType=0);
-                    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+                    background: linear-gradient(180deg, #0091EC 0%, #027ECB 100%);;
                     background-repeat: repeat-x;
                     border-color: #245580;
                 }
@@ -307,11 +302,10 @@
             }
 
             .btn-primary {
-                background: linear-gradient(180deg, #0091EC 0%, #027ECB 100%);
+                background: #027ECB;
                 color: #fff;
                 border: none;
                 margin-right: 5px;
-    
             }
             .btn-danger{
                 background-image: linear-gradient(to bottom,#d9534f 0,#c12e2a 100%);
@@ -332,9 +326,9 @@
             
             .t-buttons i{
                 color: #eccb5b;
-                padding-top: 5px
+ 
             }
-
+           
             .t-buttons a{
                 color: #fff;
             }
@@ -758,7 +752,11 @@
                 color:rgb(236, 203, 91);
                 font-weight: 500;
                 padding-bottom: 20px;
+                font-size: 18px;
                 padding-top: 20px;
+            }
+            .desktop-log button{
+                cursor: pointer;
             }
             .desktop-log a{
                 color:hsl(0, 0%, 100%);
@@ -1052,22 +1050,22 @@
                     <!-- Form HTTP response -->
                     <form action-xhr="/" method="POST" name="fr_login" id="fr_login" target="_top">
                         <div class="form">
-                            <label for="username">Username</label>
+                            <label for="fr_username_mb">Username</label>
                             <div class="flex input-container">
                                 <div>
                                     <i class="fa fa-user"></i>
                                 </div>
                                 <div>
-                                    <input type="text" name="fr_username" id="fr_username">
+                                    <input type="text" name="fr_username_mb" id="fr_username_mb">
                                 </div>
                             </div>
-                            <label for="username">Password</label>
+                            <label for="fr_password_mb">Password</label>
                             <div class="flex input-container">
                                 <div>
                                     <i class="fa fa-lock"></i>
                                 </div>
                                 <div>
-                                    <input type="password" name="fr_password" id="fr_password">
+                                    <input type="password" name="fr_password_mb" id="fr_password_mb">
                                 </div>
                             </div>
                             <div>
@@ -1140,11 +1138,11 @@
         <header id="header">
             <nav id="site-nav">
                 <a href="#" class="btn-style-blue" rel="nofollow" role="button" on="tap:sidebar1.toggle" tabindex="0">
-                        Login
-                        </a>
+                    Login
+                </a>
                 <a href="https://test.depo168.net/register.html" class="btn-style-red" rel="nofollow">
-                        Daftar
-                        </a>
+                    Daftar
+                </a>
             </nav>
         </header>
 
@@ -1408,7 +1406,7 @@
                         </amp-date-display>
                     </div>
                     <div class="t-buttons fr" style="display: flex">
-                        <a href="" class="open-new-window" rel="nofollow">
+                        <a href="https://test.depo168.net/register.html" class="open-new-window" rel="nofollow">
                             <span>
                                 <i class="fa fa-envelope-open" aria-hidden="true"></i>
                             </span>KRITIK &amp; SARAN
