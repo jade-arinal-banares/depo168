@@ -848,15 +848,9 @@
             }
 
             @media (max-width: 768px) {
-                .dropdown-content{
-                    width: 100%;
-                }
-                .dropdown-content ul li{
-                    width: 100%;
-                }
-                .slots{
-                    width: 100px;
-                }
+           
+                .slot-mobile{background:url('./images/Slots-Mobile.png');display:block}.go-mobile{background-position:-498px -89px;width:70px;height:69px}.s-princess-m{background-position:-171px -165px;width:70px;height:68px}.s-bonanza-m{background-position:-417px -10px;width:70px;height:68px}.s-bonanza-xmas-m{background-position:-335px -10px;width:70px;height:68px}.s-aztec-gems-m{background-position:-90px -10px;width:70px;height:68px}.s-sugarrush-m{background-position:-580px -10px;width:70px;height:68px}.s-mahjong-m{background-position:-90px -88px;width:70px;height:70px}.s-royalhouse-m{background-position:-90px -165px;width:70px;height:68px}.s-koigate-m{background-position:-250px -88px;width:70px;height:70px}.s-buffalo-blits{background-position:-9px -10px;width:70px;height:68px}.s-evolution-gaming{background-position:-171px -10px;width:70px;height:68px}.s-dream-gaming{background-position:-250px -10px;width:70px;height:68px}.s-pragmatic{background-position:-335px -165px;width:70px;height:68px}.s-saba{background-position:-335px -89px;width:70px;height:69px}
+.s-sv388{background-position:-498px -10px;width:70px;height:68px}.s-snakes-ladder{background-position:-9px -165px;width:70px;height:68px}.s-legend-heroes{background-position:-171px -88px;width:70px;height:70px}.s-halloween-vacation{background-position:-417px -89px;width:70px;height:69px}.s-taiko-beats{background-position:-580px -89px;width:70px;height:69px}.s-netent{background-position:-9px -88px;width:70px;height:70px}.s-redtiger{background-position:-250px -165px;width:70px;height:68px}
                 ul.mobile-slot{
                     display: flex;
                     text-decoration: none                                                      ;
@@ -874,7 +868,7 @@
                 ul.mobile-slot span{
                         display: block;
                         white-space: nowrap;
-                        width: 100%;
+                        margin: 0 auto;
                         overflow: hidden;
                         text-overflow: ellipsis;
                 }
@@ -895,7 +889,7 @@
                 .dropdown-content {
                     display: none;
                     position: absolute;
-                    background-color: rgb(22, 22, 22);
+                    background-color: #161616;
                     width: auto;
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                     z-index: 999;
@@ -907,7 +901,7 @@
                     padding-top: 5px;
                     text-align: center;
                     white-space: nowrap;
-                    width: 100%;
+                    width: 90%;
                     text-overflow: ellipsis;
                     overflow: hidden;
                 }
@@ -924,11 +918,18 @@
                 }
                 .dropdown-content ul{
                     display: block;
+                    background-color: #161616;
                 }
                 .dropdown-content ul li{
-                    display: flex;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr); 
+                    background-color: #161616;
+                  
                 }
                 .dropdown-content a:hover {background-color: #eccb5b}
+                .dropdown-content a{
+                    padding: 0;
+                }
                 .dropdown:hover .dropdown-content {
                     display: flex;
                     width: 100%;
@@ -1240,7 +1241,6 @@
             </amp-img>
         </div>
 
-
         <div class="container">
             <nav>
                 <ul class="mobile-slot">
@@ -1256,26 +1256,97 @@
                                         <span>Hot & New</span>
                             </button>
                             <div class="dropdown-content">
+                                <div class="container" style="padding: 0; margin: 0;">
                                 <ul>
                                     <li>
                                         <a href="#">
-                                            <span class="slots go"></span>
-                                            <div>Ibobet</div>
+                                            <span class="slot-mobile go-mobile"></span>
+                                            <div>Gates of Oly..</div>
                                         </a>
                                         <a href="#">
-                                            <span class="slots s-princess"></span>
-                                            <div>Cmd368</div>
+                                            <span class="slot-mobile s-princess-m"></span>
+                                            <div>Starlight Princess</div>
                                         </a>
                                         <a href="#">
-                                            <span class="slots s-bonanza"></span>
-                                            <div>Sbobet</div>
+                                            <span class="slot-mobile s-bonanza-m"></span>
+                                            <div>Sweet Bonanza</div>
                                         </a>
                                         <a href="#">
-                                            <span class="slots s-bonanza-xmas"></span>
-                                            <div>BTI</div>
+                                            <span class="slot-mobile s-bonanza-xmas-m"></span>
+                                            <div>Sweet Bonanza Xmas</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-aztec-gems-m"></span>
+                                            <div>Aztec Gems</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-sugarrush-m"></span>
+                                            <div>Sugar Rush</div>
+                                        </a>
+                                        
+                                        <a href="#">
+                                            <span class="slot-mobile s-mahjong-m"></span>
+                                            <div>Mahjong Ways</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-royalhouse-m"></span>
+                                            <div>Royal House</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-koigate-m"></span>
+                                            <div>Koi Gate</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-buffalo-blits"></span>
+                                            <div>Buffalo Blits</div>
+                                        </a>
+                                         <a href="#">
+                                            <span class="slot-mobile s-evolution-gaming"></span>
+                                            <div>Evolution Gaming</div>
+                                        </a>
+                                         <a href="#">
+                                            <span class="slot-mobile s-dream-gaming"></span>
+                                            <div>Dreaming Gaming</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-pragmatic"></span>
+                                            <div>Pragmatic</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-saba"></span>
+                                            <div>Saba</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-sv388"></span>
+                                            <div>SV388</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-snakes-ladder"></span>
+                                            <div>Snakes & Ladder</div>
+                                        </a>
+                                         <a href="#">
+                                            <span class="slot-mobile s-legend-heroes"></span>
+                                            <div>Legend of Heroes</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-halloween-vacation"></span>
+                                            <div>Halloween Vacation</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-taiko-beats"></span>
+                                            <div>Taiko Beats</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-netent"></span>
+                                            <div>Netent</div>
+                                        </a>
+                                        <a href="#">
+                                            <span class="slot-mobile s-redtiger"></span>
+                                            <div>Red Tiger</div>
                                         </a>
                                     </li>
                                 </ul>
+                            </div>
                             </div>
                         </div>
                     </li>
@@ -1581,6 +1652,7 @@
             </nav>
         </div>
 
+        
         <div class="box-three">
             <div class="container">
                 <div class="center-box">
