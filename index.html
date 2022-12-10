@@ -518,7 +518,7 @@
             
             .site-info{
                 display: flex;
-                padding: 5px 0 10px 0;
+                padding: 5px 0 15px 0;
             }
 
             .pj-txt {
@@ -742,8 +742,11 @@
             .dropdown {
                 display: inline-block;
                 margin-right: 10px;
+                
             }
-
+            .dropdown svg{
+                text-align: center;
+            }
             .dropdown-content {
                 display: none;
                 position: absolute;
@@ -802,7 +805,8 @@
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
-                background-color: hsla(0, 0%, 9%, 0.5);
+           
+                background-color: rgba(91, 91, 88, 0.9);
             }
             .lc-box {
                 background: url(./images/lc-bg_v2.png);
@@ -846,11 +850,14 @@
             font-size: 25px;
             color: #fff;
             }
-         
+            .amp-carousel-button{
+                background-position: 10px;
+            }
             @media (max-width: 768px) {
                 .amp-sidebar-mask{
                     background-color: rgba(0,0,0,0.1)
                 }
+           
                 .go-mobile,.s-aztec-gems-m,.s-bonanza-m,.s-bonanza-xmas-m,.s-buffalo-blits,.s-dream-gaming,.s-evolution-gaming,.s-halloween-vacation,.s-koigate-m,.s-legend-heroes,.s-mahjong-m,.s-netent,.s-pragmatic,.s-princess-m,.s-redtiger,.s-royalhouse-m,.s-saba,.s-snakes-ladder,.s-sugarrush-m,.s-sv388,.s-taiko-beats{width:93px;height:93px}.slot-mobile{background:url("./images/Slot-Mobile.png");display:block}.go-mobile{background-position:-660px -123px}.s-princess-m{background-position:-227px -225px}.s-bonanza-m{background-position:-553px -17px}.s-bonanza-xmas-m{background-position:-444px -17px}.s-aztec-gems-m{background-position:-119px -17px}.s-sugarrush-m{background-position:-770px -17px}.s-mahjong-m{background-position:-119px -122px}.s-royalhouse-m{background-position:-119px -225px}.s-koigate-m{background-position:-332px -122px}.s-buffalo-blits{background-position:-12px -17px}.s-evolution-gaming{background-position:-227px -17px}.s-dream-gaming{background-position:-332px -17px}.s-pragmatic{background-position:-444px -225px}.s-saba{background-position:-444px -123px}.s-sv388{background-position:-660px -17px}.s-snakes-ladder{background-position:-12px -225px}.s-legend-heroes{background-position:-227px -122px}.s-halloween-vacation{background-position:-553px -123px}.s-taiko-beats{background-position:-770px -123px}.s-netent{background-position:-12px -122px}.s-redtiger{background-position:-332px -225px}
                 
                 .slot-sports{background:url("./images/Slot-Sport.png");display:block}.s-ibcbet{background-position:-137px -6px;width:97px;height:86px}.s-cmd368{background-position:-5px -96px;width:106px;height:88px}.s-bobet{background-position:-5px -9px;width:107px;height:79px}.s-bti{background-position:-133px -109px;width:101px;height:79px}
@@ -1210,7 +1217,7 @@
                 <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
                     <amp-img src="./dpv1/m/images/logo@2x.png" width="200" height="70" layout="intrinsic" alt=""></amp-img>
                     <p>LOGIN KE AKUN ANDA</p>
-                    <form action-xhr="/" method="POST" name="fr_login" id="fr_login" target="_top">
+                    <form action-xhr="/" method="POST" name="fr_login_1" id="fr_login_1" target="_top">
                         <div class="form">
                             <label for="fr_username_mb">Username</label>
                             <div class="flex input-container">
@@ -1688,7 +1695,8 @@
                                         <span>Poker</span>
                             </button>
                             <div class="dropdown-content">
-                        
+                                <div class="container">
+
                                     <ul>
                                         <li>
                                             <a href="#">
@@ -1709,7 +1717,8 @@
                                             </a>
                                         </li>
                                     </ul>
-           
+                                               
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -1721,7 +1730,7 @@
                                         <span>Arcade</span>
                             </button>
                             <div class="dropdown-content">
-                    
+                                <div class="container">
                                     <ul>
                                         <li>
                                             <a href="#">
@@ -1742,7 +1751,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                      
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -1924,14 +1933,14 @@
                 </amp-img>
                 <div class="games-menu">
                     <div class="dropdown">
-                        <a class="dropbtn game-icon" href="https://test.depo168.net/judi-bola.html"> 
+                        <a class="dropbtn game-icon" href="https://test.depo168.net/judi-bola.html" style="color: hsl(46, 79%, 64%);"> 
                                     <i class="fa fa-home"></i>
                                     <br/>
                                     <span>HOME</span>
                         </a>
                     </div>
                     <div class="dropdown">
-                        <a class="dropbtn game-icon" href="https://test.depo168.net/hot-and-new.html">
+                        <a class="dropbtn game-icon" style="padding-left: 20px;"  href="https://test.depo168.net/hot-and-new.html">
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fire-alt" class="svg-icon fa-fire-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 670">
                                     <path fill="currentColor" d="M342,370.1c-1.5,0.7-3.1,2.2-3.8,3.7c-1.3,2.7-2.2,5.7-2.9,8.6c-5.7,25.2-11.3,50.4-16.9,75.6 c-0.9,4.1-1.5,8.2-2,12.4c-0.3,3,1.3,4.4,4.5,4.5c3.6,0.1,6.1-1.3,7.3-4.8c1.3-3.5,2.4-7.1,3.3-10.7c4.8-20.9,9.4-41.9,14.1-62.8 c1.6-7.1,3-14.2,4.5-21.3C350.3,370.1,346.9,367.8,342,370.1z"></path>
                                     <path fill="currentColor" d="M557.8,293.8c-10.3,9.1-8.5,8.1-16,11.5c-5.3,2.4-14.2,4.9-34.2,2.4c-13.3-1.7-31.7-7.6-39.8-22.8 c-5.2-9.9-6.8-22.4-6.8-22.4c-0.2-9.1-1.5-14.9,11.8-30.7c10.2-12.2,17.9-16.9,22-20.9c7.9-7.5,20.4-15.6,28-31.5 c3-6.4,7.5-27-1.3-53C508.3,87,475,76.6,475,76.6s31.5,38.7,28.9,62.6c-1.8,16.5-13.6,41.6-50.3,46.5c-15.2,2-47.7-11.7-57.2-21.7 c-13.7-14.5-22.2-33.5-25.1-56.1c-1.6-12.3,0.4-37,8.2-48.6c17.3-25.7,56.3-31.7,56.3-31.7s-45.2-9.7-75.1,10.2 c-18.5,12.3-44.4,33.5-33.4,86.8c3.6,17.6,29.2,65.1,28.9,88.4c-0.2,17.8-8.7,72.8-45.9,79.7c-17,3.2-25.8,1.9-35.4-2.8 c-36.3-17.9-32.8-75.3-28-96.2c8.1-35.1,12.6-61.5-1.4-99.6c-9-24.8-22-32.3-32-43.3c-9-10.2-52.8-38.8-59.2-43 c6.4,5.6,44.5,54.4,50.4,78.4c10.7,44.1-13,76.9-28.6,92.2c-18.5,18.2-28.2,24.7-39.9,38.9c-12.3,14.8-32.9,38.3-42.2,58.2 l-0.4-0.1c-0.1-1-0.4-1.8-0.8-2.3c-2.7-3.5-7.6-12.1-9.3-14c-25.3-28.2-71.2-14-77.3-12.9c5.5,0.5,45.3,5.1,54.9,33.7 c8.8,26.2,10.5,54.3,10.8,68.1c-1.2,9.9-1.9,20-1.9,30.3c0,135.8,110,245.8,245.8,245.8c103.9,0,192.8-64.5,228.7-155.7 c7.4-17,18.9-49.8,22.8-96.9c0.9-11.2-0.2-34.6,7.4-54.4c9.7-25,29.4-31.8,29.4-31.8S582,272.7,557.8,293.8z M255.6,495.9 c-0.2,0.9-0.4,1.5-1.6,1.4c-13.8,0-27.7,0-41.5,0c-0.2,0-0.4-0.1-0.8-0.2c4.6-20.9,9.3-41.7,13.9-62.7c-4.4,0-8.6,0-12.9,0 c-1.4,6.1-2.7,12.2-4.1,18.3c-3.2,14.4-6.4,28.8-9.6,43.2c-0.2,0.9-0.5,1.4-1.6,1.4c-13.8,0-27.5,0-41.3,0c-0.3,0-0.5-0.1-0.9-0.2 c1.2-5.4,2.4-10.7,3.6-16c8.1-36.3,16.2-72.7,24.2-109c1.7-7.8,3.5-15.6,5.2-23.4c0.2-0.9,0.4-1.4,1.6-1.4c13.8,0,27.7,0,41.5,0 c0.2,0,0.4,0.1,0.8,0.2c-3.9,17.7-7.9,35.4-11.8,53.3c4.4,0,8.6,0,12.9,0c4-17.8,7.9-35.6,11.9-53.4c14.6,0,29,0,43.6,0 c-1,4.8-2.1,9.4-3.1,14c-8.6,38.9-17.3,77.8-25.9,116.6C258.2,484.1,256.8,490,255.6,495.9z M392,380.1 c-3.5,18.8-7.5,37.5-11.6,56.1c-1.9,8.9-4.2,17.7-6.7,26.5c-4.8,17.4-16.9,28.4-34.6,34.2c-7.5,2.5-15.3,3.3-23.1,3.4 c-8.4,0-16.6-1-24.2-4.2c-12.6-5.3-19.9-17.1-17.6-30c3-16.7,6.4-33.3,10-49.9c2.5-11.7,5.4-23.3,8.5-34.9 c4.6-17,16.3-28,33.5-33.7c14.4-4.8,29.2-5.3,43.9-1.1C386.6,351.4,395,364.2,392,380.1z M496.1,377.4c-8.6,0-17.1,0-25.8,0 c-8.9,40-17.8,79.9-26.7,119.9c-14.5,0-28.9,0-43.6,0c8.9-39.9,17.7-79.7,26.7-119.9c-8.7,0-17.1,0-25.7,0 c2.2-10.1,4.4-19.9,6.6-29.9c31.7,0,63.3,0,95.1,0C500.6,357.5,498.4,367.3,496.1,377.4z"></path>
@@ -2070,7 +2079,7 @@
                     </div>
 
                     <div class="dropdown">
-                        <a class="dropbtn game-icon" href="https://test.depo168.net/livecasino.html">
+                        <a class="dropbtn game-icon" style="padding-left: 20px;" href="https://test.depo168.net/livecasino.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300.3" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision" class="svg-icon lc-icon">
                                         <path class="fil0" d="M138.7 0.2c-21.1 1.9-39.6 7.2-58 16.7-35.6 18.4-62.7 51.1-74.5 89.5-4.6 14.9-6.2 26.2-6.2 43.4-0.1 14.1 0.4 18.6 2.9 31.4 3.3 16.3 12.1 37.3 21.5 51.5 36.5 54.6 102.5 79.4 165.5 62 25.5-7 48.7-20.8 67.6-40.3 45.1-46.5 55.4-116 25.6-173.4-11.7-22.5-29.1-41.9-50.4-56.2-7.8-5.2-22.8-12.8-31.5-16-7.9-2.9-19.6-5.9-28.8-7.3-7.3-1.2-27.1-2-33.7-1.4l0 0zm29.1 27.8c13.7 2.1 24.9 5.6 37.3 11.8 12.3 6.2 22.4 13.4 32 23.1 23.6 23.7 36.1 53.9 36.1 87.2 0 27.6-8.5 52.8-25.3 75.1-13.1 17.3-33.1 32.3-54 40.3-7.3 2.8-19.6 5.9-27.8 7-8.7 1.1-23.5 1.1-32.1 0-22.1-2.9-43.4-12-61.2-26-5.3-4.2-15-13.9-19.2-19.2-11.3-14.3-20.1-32.5-23.9-49.5-4-17.7-4-37.3 0-55.2 3.8-17 12.7-35.4 24-49.5 19.2-24 47.3-40.3 77.9-45 10-1.5 26.2-1.5 36.4-0.1l0 0z"></path>
                                         <path class="fil0" d="M141.1 32.5c-0.8 0.2-0.8 1.9 0.4 15.7 0.7 8.5 1.3 15.7 1.4 16.1 0 0.6 1.8 0.8 7.1 0.8 5.2 0 7.1-0.2 7.1-0.8 0.1-0.3 0.6-7.6 1.3-16.1l1.4-15.4-1.2-0.3c-1.3-0.4-16-0.4-17.3 0z"></path>
@@ -2352,7 +2361,7 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a class="dropbtn game-icon" href="https://test.depo168.net/sabung-ayam.html">
+                        <a class="dropbtn game-icon" style="padding-left: 25px;" href="https://test.depo168.net/sabung-ayam.html">
                             <svg  xmlns="http://www.w3.org/2000/svg" class="svg-icon" width="300" height="300" viewBox="0 0 225 225">
                                 <path d="M29.8 2.2c-2 3.6-1.4 21.7 1.1 31.3 4.8 18.5 14.4 31.9 27 37.9 5.8 2.7 7.6 3.1 15.1 3 7.9-.1 11.2-.9 21.3-4.9 1.1-.4-5.2 6-14 14.2-22.8 21.7-40.6 40.9-48.7 52.6-3.8 5.5-3.8 5.5-2.6 11 5.5 26.7 40.5 58.6 78 71.1 13 4.3 28.7 6.7 30.1 4.5 1.8-2.9 12.9-38.1 12.9-41.2 0-.2-1.8-.7-4.1-1.1-18.5-3-28.4-20.4-21.8-38.2 2.1-5.7 11.6-16.9 18.3-21.7l3.1-2.2-2.3 3.2c-7.1 10-11.5 25.8-9.2 32.9 1.9 5.8 3.8 8.2 8.9 11.2 9.1 5.3 21.9 2.4 26.8-6.3 3.2-5.7 3-14.9-.7-29-1.5-6.1-2.6-11.2-2.4-11.4 1-1 14.7 1.9 19.7 4.2l5.4 2.5-.9-3.2c-1.8-5.6-8.2-13.9-14.7-18.9l-6.3-4.7 5.5-2.5c8.2-3.6 17.1-5.7 27.1-6.4l8.8-.6-4.1-4.6c-8-9.1-21.3-12-33.5-7.3-1.6.6-1.5.2.7-3.2 3.6-5.7 5-11 4.4-16.6-1.7-13.8-14.5-30-34.2-43.2-7.9-5.3-10.4-5.5-11.8-1.1-2.2 7-8.7 10-15.2 7-1.9-1-6.4-4.4-9.9-7.7-7.8-7.1-9.7-7.2-10.8-.8-.8 4.8-3.6 8-7 8-3.2 0-9.4-3.7-15.6-9.5C70.9 7.5 67.7 5 67 5c-.9 0-1 2.2-.5 8.9.6 8.2.5 9.1-1.4 11C59 31 50.8 25.2 36 4.6 34.1 2.1 32.3 0 31.9 0c-.5 0-1.4 1-2.1 2.2zM138 76.9c3.8 3.7 4.5 7 2.7 11.4-3.1 7.2-12.1 8.6-17.1 2.6-8.2-9.7 5.4-23 14.4-14z"></path>
                             </svg>
@@ -2440,14 +2449,14 @@
 				 <!-- Slots Progressive Jackpot -->
                 <div class="container">
                     <div class="site-info">
-                        <div>
+                        <div style="position: relative; padding-right: 15px">
                             <amp-img src="./dpv1/images/progressive-jackpot-mh168.gif"
                             width="640"
                             height="114"
                             layout="intrinsic"
                             alt="">
                             </amp-img>
-                            <div class="pj-txt" style="position: relative; margin-left: 25px">
+                            <div class="pj-txt" style="margin-left: 10px; margin-top: 115px; ">
                                 <span  data-value="13593886989.320045">IDR&nbsp;13,593,886,989.32</span>
                             </div>
                         </div>
@@ -2681,7 +2690,7 @@
                             <div class="copyright fr">© <span id="spYear">2022</span> DEPO168 All rights reserved | 18+</div>
                         </div>
                         <div class="footer-mid"></div>
-                        <h4>Powered By</h4>
+                        <h4 style="color: hsl(0, 0%, 53%)">Powered By</h4>
                         <br>
                         <br>
                         <div class="provider-list">
