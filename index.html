@@ -305,6 +305,7 @@
                 color: #fff;
                 border: none;
                 margin-right: 5px;
+                background-image: linear-gradient(to bottom,#337ab7 0,#265a88 100%);
             }
             .btn-danger{
                 background-image: linear-gradient(to bottom,hsl(2, 64%, 58%) 0,hsl(2, 64%, 46%) 100%);
@@ -504,7 +505,7 @@
                 padding: 5px;
             }
             
-            .cs{filter:sepia(100%);display:block;background:url('./images/idr_sprite.png')}.cs:hover{filter:sepia(1%)}.btpn{background-position:-11px -979px;width:94px;height:25px;color:#027ecb}.bca{background-position:-21px -14px;width:79px;height:31px}.cimb{background-position:-4px -382px;width:113px;height:15px}.danamon{background-position:-4px -200px;width:114px;height:16px}.mandiri{background-position:-13px -260px;width:93px;height:17px}.nobu{background-position:-16px -618px;width:92px;height:24px}.qcbc{background-position:-37px -559px;width:45px;height:21px}.panin{background-position:-20px -441px;width:79px;height:18px}.permata{background-position:-28px -503px;width:59px;height:16px}.sumut{background-position:-13px -319px;width:103px;height:20px}.bca{background-position:-21px -14px;width:79px;height:31px}.kalbar{background-position:-26px -802px;width:65px;height:15px}.mega{background-position:-26px -860px;width:68px;height:21px}.syariah{background-position:-13px -673px;width:95px;height:30px}.bnc{background-position:-22px -1094px;width:77px;height:27px}.bni{background-position:-24px -76px;width:68px;height:28px}.papua{background-position:-17px -741px;width:84px;height:19px}.bri{background-position:-24px -137px;width:63px;height:29px}.bsi{background-position:-29px -1033px;width:60px;height:28px}.btn{background-position:-25px -917px;width:100%;height:35px}
+            .cs{filter:sepia(100%);display:block;background:url('./images/idr_sprite.png')}.cs:hover{filter:sepia(1%)}.btpn{background-position:-11px -979px;width:94px;height:25px;color:#027ecb}.bca{background-position:-21px -14px;width:79px;height:31px}.cimb{background-position:-4px -382px;width:113px;height:15px}.danamon{background-position:-4px -200px;width:114px;height:16px}.mandiri{background-position:-13px -260px;width:93px;height:17px}.nobu{background-position:-16px -618px;width:92px;height:24px}.qcbc{background-position:-37px -559px;width:45px;height:21px}.panin{background-position:-20px -441px;width:79px;height:18px}.permata{background-position:-28px -503px;width:59px;height:16px}.sumut{background-position:-13px -319px;width:103px;height:20px}.bca{background-position:-21px -14px;width:79px;height:31px}.kalbar{background-position:-26px -802px;width:65px;height:15px}.mega{background-position:-26px -860px;width:68px;height:21px}.syariah{background-position:-13px -673px;width:95px;height:30px}.bnc{background-position:-22px -1094px;width:77px;height:27px}.bni{background-position:-24px -76px;width:68px;height:28px}.papua{background-position:-17px -741px;width:84px;height:19px}.bri{background-position:-24px -137px;width:63px;height:29px}.bsi{background-position:-29px -1033px;width:60px;height:28px}.btn{width:100%;height:35px}
     
     .slots{background:url("./images/Slots.png");display:block}.go{background-position:-778px -140px;width:107px;height:107px}.s-princess{background-position:-270px -259px;width:107px;height:107px}.netent{background-position:-17px -139px;width:107px;height:107px}.red-tiger{background-position:-393px -259px;width:107px;height:107px}.halloween-vacation{background-position:-653px -140px;width:107px;height:107px}.taiko-beats{background-position:-907px -140px;width:107px;height:107px}.pragmatic-slot{background-position:-525px -259px;width:107px;height:107px}.snake-ladder{background-position:-17px -259px;width:107px;height:107px}.legend-heroes{background-position:-270px -139px;width:107px;height:107px}.saba{background-position:-525px -140px;width:107px;height:106px}.sv388{background-position:-778px -14px;width:107px;height:107px}.dream-g-casino{background-position:-393px -14px;width:107px;height:107px}.evolution-casino{background-position:-270px -14px;width:107px;height:107px}.mahjong{background-position:-144px -139px;width:107px;height:107px}.royal-house{background-position:-144px -259px;width:107px;height:107px}.koi-gate{background-position:-393px -139px;width:107px;height:107px}.buffalo-blits{background-position:-17px -14px;width:107px;height:107px}.s-bonanza-xmas{background-position:-525px -14px;width:107px;height:107px}.aztec{background-position:-144px -14px;width:107px;height:107px}.sugar-rush{background-position:-907px -14px;width:107px;height:107px}.s-bonanza{background-position:-653px -14px;width:107px;height:107px}
 .slot-sport{background:url("./images/Slots1.png");display:block}.ibo-bet{background-position:-140px -101px;width:97px;height:86px}.cmd368{background-position:-13px -101px;width:106px;height:88px}.sbobet-sport{background-position:-21px -11px;width:107px;height:79px}.bti-sport{background-position:-140px -10px;width:101px;height:79px}
@@ -853,66 +854,55 @@
             .amp-carousel-button{
                 background-position: 10px;
             }
+
+            amp-mega-menu .menu-item[open] > div{
+                    width: 300px;
+                    padding: 10px;
+                    margin-top: 20px;
+                    right: 0;
+                    display: flex;
+                    font-size: 10px;
+                    left: -104px;
+                    /* margin-right: 10px; */
+                    text-transform: uppercase;
+                    align-items: center;
+                    background-color: hsl(0, 0%, 9%);
+                    justify-content: center;
+                    border-radius: 10px;
+            }
+            .arrow-up {
+                border-bottom: 10px solid #161616;
+            }
+            .arrow-up {
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid #161616;
+                position: absolute;
+                top: -6px;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+            .i-amphtml-mega-menu-mask{
+                background-color: transparent;
+                z-index: 777;
+            }
             @media (max-width: 768px) {
                 .amp-sidebar-mask{
-                    background-color: rgba(0,0,0,0.1)
+                    background-color: rgba(0,0,0,0.1);
+                    z-index: 777;
                 }
-           
+
                 .go-mobile,.s-aztec-gems-m,.s-bonanza-m,.s-bonanza-xmas-m,.s-buffalo-blits,.s-dream-gaming,.s-evolution-gaming,.s-halloween-vacation,.s-koigate-m,.s-legend-heroes,.s-mahjong-m,.s-netent,.s-pragmatic,.s-princess-m,.s-redtiger,.s-royalhouse-m,.s-saba,.s-snakes-ladder,.s-sugarrush-m,.s-sv388,.s-taiko-beats{width:93px;height:93px}.slot-mobile{background:url("./images/Slot-Mobile.png");display:block}.go-mobile{background-position:-660px -123px}.s-princess-m{background-position:-227px -225px}.s-bonanza-m{background-position:-553px -17px}.s-bonanza-xmas-m{background-position:-444px -17px}.s-aztec-gems-m{background-position:-119px -17px}.s-sugarrush-m{background-position:-770px -17px}.s-mahjong-m{background-position:-119px -122px}.s-royalhouse-m{background-position:-119px -225px}.s-koigate-m{background-position:-332px -122px}.s-buffalo-blits{background-position:-12px -17px}.s-evolution-gaming{background-position:-227px -17px}.s-dream-gaming{background-position:-332px -17px}.s-pragmatic{background-position:-444px -225px}.s-saba{background-position:-444px -123px}.s-sv388{background-position:-660px -17px}.s-snakes-ladder{background-position:-12px -225px}.s-legend-heroes{background-position:-227px -122px}.s-halloween-vacation{background-position:-553px -123px}.s-taiko-beats{background-position:-770px -123px}.s-netent{background-position:-12px -122px}.s-redtiger{background-position:-332px -225px}
                 
                 .slot-sports{background:url("./images/Slot-Sport.png");display:block}.s-ibcbet{background-position:-137px -6px;width:97px;height:86px}.s-cmd368{background-position:-5px -96px;width:106px;height:88px}.s-bobet{background-position:-5px -9px;width:107px;height:79px}.s-bti{background-position:-133px -109px;width:101px;height:79px}
                         
-                
                 .slot-casino{background:url("./images/Slot-Casino.png");display:block}.s-pragmatic{background-position:-424px -7px;width:93px;height:93px}.s-gameplay{background-position:-214px -111px;width:93px;height:93px}.s-playtech{background-position:-318px -7px;width:93px;height:92px}.s-ebet{background-position:-527px -111px;width:92px;height:92px}.s-allbet,.s-asia-gaming,.s-evolution-g,.s-hogaming,.s-sbobet{width:93px;height:92px}.s-allbet{background-position:-112px -217px}.s-asia-gaming{background-position:-214px -217px}.s-evolution-g{background-position:-424px -111px}.s-hogaming{background-position:-112px -111px}.s-sbobet{background-position:-214px -7px}.s-microgaming-g{background-position:-527px -7px;width:92px;height:92px}.s-ezugi{background-position:-318px -111px;width:93px;height:92px}.s-dreamgaming,.s-ion-casino,.s-wmcasino{width:92px;height:92px}.s-ion-casino{background-position:-8px -111px}.s-wmcasino{background-position:-8px -7px}.s-dreamgaming{background-position:-8px -217px}.s-sexy-gaming{background-position:-112px -7px;width:93px;height:92px}
 
-                .slot-poker{background:url("./images/Slot-Poker.png");display:block}
-
-                .s-idnplay{
-                    background-position: -18px -9px;
-                    width: 85px;
-                    height: 84px;
-                }
-                .s-1gane{
-                    background-position: -301px -7px;
-                    width: 87px;
-                    height: 86px;
-                }
-
-                .s-p2play{
-                     background-position: -113px -7px;
-                    width: 87px;
-                    height: 86px;
-
-                }
-                .s-balaksa{
-                    background-position: -207px -7px;
-                    width: 87px;
-                    height: 86px;
-                }
-
-                .slot-arcade{background:url("./images/Slots6.png");display:block}
-
-                .s-fishing{
-                    background-position: -124px -9px;
-                    width: 107px;
-	                height: 107px;
-                }
-                .s-fishing-war{
-                    background-position: -8px -9px;
-                    width: 107px;
-	                height: 107px;
-                }
-                .s-joker-tembak{
-                    background-position: -124px -123px;
-                    width: 107px;
-                    height: 107px;
-                }
-                .s-fishermen-gold{
-                    background-position: -8px -123px;
-                    width: 107px;
-                    height: 107px;
-                
-                }
+                .slot-poker{background:url("./images/Slot-Poker.png");display:block}.s-idnplay{background-position:-18px -9px;width:85px;height:84px}.s-1gane,.s-balaksa,.s-p2play{width:87px;height:86px}.s-1gane{background-position:-301px -7px}.s-p2play{background-position:-113px -7px}.s-balaksa{background-position:-207px -7px}.s-fishermen-gold,.s-fishing,.s-fishing-war,.s-joker-tembak{width:107px;height:107px}.slot-arcade{background:url("./images/Slots6.png");display:block}.s-fishing{background-position:-124px -9px}.s-fishing-war{background-position:-8px -9px}.s-joker-tembak{background-position:-124px -123px}.s-fishermen-gold{background-position:-8px -123px}
 
                 ul.mobile-slot{
                     display: flex;
@@ -1881,12 +1871,15 @@
                             </span>AFILIASI
                         </a>
                         <span class="separator-2" style="margin-right: 5px;"></span>
+                      
                         <amp-mega-menu height="30" layout="fixed-height">
+                           
                             <nav class="login-desktop">
                                 <ul>
                                     <li class="menu-item">
                                         <button class="login-btn btn btn-primary" role="button">LOGIN <i class="fa fa-angle-down"></i></button>
                                         <div role="dialog" class="desktop-log">
+                                            <i class="arrow-up"></i>
                                             <form action-xhr="/" method="POST" name="fr_login" id="fr_login" target="_top">
                                                 <div class="form">
                                                     <h3>LOGIN KE AKUN ANDA</h3>
@@ -1920,6 +1913,9 @@
                                 </ul>
                             </nav>
                         </amp-mega-menu>
+
+                       
+                        
                         <a href="https://test.depo168.net/register.html" class="btn-danger" rel="nofollow">DAFTAR</a>
                     </div>
                 </div>
